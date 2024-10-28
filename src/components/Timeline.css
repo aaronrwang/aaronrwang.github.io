@@ -1,0 +1,17 @@
+#timeline {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.courses {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+#timeline h1 {
+    text-align: center;
+    width: 100%;
+    font-size: 3rem;
+}

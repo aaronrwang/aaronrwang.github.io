@@ -1,0 +1,94 @@
+/* Navbar.css */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    background-color: #333;
+    z-index: 10;
+}
+
+.nav-links li.menuButton,
+.nav-links li.name {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .nav-links li.hideOnMobile {
+        display: none;
+    }
+
+    .nav-links li.name {
+        display: inline;
+    }
+
+    /* .nav-links li.menuButton {
+        display: inline;
+    } */
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    padding-left: 0rem;
+}
+
+.abc {
+    color: white;
+    text-decoration: none;
+    padding: 0rem 0rem 1rem 0rem;
+    /* margin: 1rem; */
+    font-size: 1.5rem;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    margin: 0rem 2rem;
+}
+
+.ab {
+    color: white;
+    text-decoration: none;
+    padding: 0rem 0rem 1rem 0rem;
+    /* margin: 1rem; */
+    font-size: 1.5rem;
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+    margin: 0rem 2rem;
+}
+
+.nav-links {
+    justify-content: left;
+    margin-top: 1rem;
+    margin-left: 0rem;
+    /* Default */
+    margin-bottom: 0rem;
+}
+
+.nav-links li.hideOnMobile {
+    transition: opacity 3s ease, border-bottom-color 3s ease;
+}
+
+.abc:hover,
+.abc.active {
+    opacity: 1;
+    border-bottom-color: white;
+}
+
+
+
+.nav {
+    width: 75%;
+}
+
+.contact {
+    width: 25%;
+}
+
+.nav-contact-links {
+    justify-content: right;
+    margin-right: 1rem;
+}
+
+.nav-contact-links li a {
+    margin: 1rem;
+}
