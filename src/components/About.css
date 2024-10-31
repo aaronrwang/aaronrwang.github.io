@@ -30,6 +30,10 @@
     text-align: center;
 }
 
+#education>h2 {
+    margin: -2rem 4rem 1rem 4rem;
+}
+
 #aboutDescription p {
     padding: 0rem 4rem;
 }

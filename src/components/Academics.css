@@ -3,12 +3,19 @@
     flex-wrap: wrap;
     justify-content: center;
     --tested-color: #666;
-    --current-color: gold;
-    --ta-color: rgb(0, 208, 255);
-    --london-color: #ac42f8;
+    /* No change */
+    --current-color: #e2c70e;
+    /* Brighter, softer gold */
+    --ta-color: rgb(0, 180, 230);
+    /* Brighter teal */
+    --london-color: #b86ee0;
+    /* Lighter purple */
     --future-color: rgba(64, 64, 64, 0.1);
+    /* No change */
     --background-color: #444;
-    --active-color: #21D0B3;
+    /* No change */
+    --active-color: #28d7c8;
+    /* Brighter aqua */
     width: 90%;
 }
 
