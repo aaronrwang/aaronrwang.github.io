@@ -12,7 +12,7 @@ export const experience = {
             "cover": NDcover,
             "img": ND,
             "title": "Teacher's Assistant",
-            "location": "Notre Dame, In",
+            "location": "Notre Dame, IN",
             "description": "&bull; Hosting office hours weekly to further explain concepts and supplement in-class lectures<br/>&bull; Creating and grading problem sets for 80+ students every week"
         },
         {

@@ -1,6 +1,14 @@
 import connectfour from '../../assets/projects/connectfour.jpeg';
 import ccs from '../../assets/projects/ccs.jpeg';
+import gostop from '../../assets/projects/GoStop.jpeg';
 export const projects = [
+    {
+        'title': 'Go Stop (HwaTu)',
+        'github': 'https://github.com/aaronrwang/HwaTu',
+        'img': gostop,
+        'description': 'Building an online Web app to allow users to play a traditional Korean card Game online',
+        'skills': 'Node.js, Express.js, Socket.io, React'
+    },
     {
         'title': 'CCS Website',
         'github': 'https://github.com/ccsofnd/ccswebsite.git',

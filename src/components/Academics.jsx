@@ -95,9 +95,22 @@ export default function Academics() {
                     </div>
                 </div>
             </div>
-            <div className="courses-mobile"></div>
             <div className="courses-alt">
-                Computer Science Classes: Data Structures, Systems Programming and Logic Design.
+                <p>The following are classes I have taken so far.</p>
+                <p>Computer Science Classes: Fundamentals of Computing, Discrete Math, Data Structures, Systems Programming and Logic Design.</p>
+                <p>Math: Calc I-III, Linear Algebra, Introduction to Probability</p>
+                <p>Engineering Corporate Practice: Macroeconomics, Microeconomics, and Integrated Business and Engineering Fundamentals</p>
+                <p>Engineering: Engineering Design, Chemistry, Physics I-II,Embedded Systems, and Engineering of Photography</p>
+                <p>Core: Foundational Theology and Business Ethics Philosophy Seminar</p>
+            </div>
+            <div className="courses-extra">
+                <h3>Online courses</h3>
+                <ul>
+                    <li><a href="https://nd.udemy.com/course/react-the-complete-guide-incl-redux/">UDEMY: React 2024 Guide (IP)</a></li>
+                    <li><a href="https://nd.udemy.com/course/the-complete-javascript-course/">UDEMY: Complete Javascript (Parts)</a></li>
+                    <li><a href="https://nd.udemy.com/course/data-structures-algorithms-cpp/">UDEMY: Data Structures & Algorithms</a></li>
+                    <li><a href="https://pll.harvard.edu/course/cs50-introduction-computer-science">Harvard: CS50</a></li>
+                </ul>
             </div>
         </section >
 
