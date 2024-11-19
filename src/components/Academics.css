@@ -216,7 +216,7 @@ h4.courses-description-title {
     display: flex;
     flex-wrap: nowrap;
     padding: 5px 0px 5px 5px;
-    font-size: 1.2vw;
+    font-size: 16px;
 }
 
 .key-color-box {

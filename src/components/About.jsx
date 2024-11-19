@@ -17,8 +17,8 @@ export default function () {
                     <h2>University of Notre Dame</h2>
                     <b>Computer Science<br />Applied Computational Mathematics and Statistics</b>
                 </div>
-                <p>Join me on this journey of app development to turn concepts into practical applications for real users. </p>
-                <a id="resume-download" target="_blank" href="https://docs.google.com/document/d/1b-15NpIjybX310q7pPLRJQf9WNqo-bDr/edit?usp=sharing&ouid=102225202270181873995&rtpof=true&sd=true">
+                <p>I am currently interested in Full stack development, with a particular interest in creating interactive, user-centric applications.</p>
+                <a id="resume-download" target="_blank" href="https://drive.google.com/file/d/1L27-BcgAWWlgH5riIIo80yy1umlHhj2b/view?usp=sharing">
                     <b>View Resume</b>
                     <img src={download} height="20px" />
                 </a>
