@@ -27,7 +27,7 @@ export default function Navbar({ onScroll }) {
                 <ul className="nav-contact-links">
                     <li><a target='_blank' href="http://www.linkedin.com/in/aaron-r-wang"><LinkedInLogo color="#FFF" width='30' height='30' />
                     </a></li>
-                    <li><a target='_blank' href="https://github.com/awangwang04"><GitHubLogo color="#FFF" width='30' height='30' />
+                    <li><a target='_blank' href="https://github.com/aaronrwang"><GitHubLogo color="#FFF" width='30' height='30' />
                     </a></li>
                 </ul>
             </div>

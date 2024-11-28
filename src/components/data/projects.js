@@ -18,7 +18,7 @@ export const projects = [
     },
     {
         'title': 'Connect Four',
-        'github': 'https://github.com/awangwang04/Connect-Four.git',
+        'github': 'https://github.com/aaronrwang/Connect-Four.git',
         'img': connectfour,
         'description': 'Built a 2-player Connect Four Game using Java AWT (Swing) GUI Library.',
         'skills': 'Java AWT & Swing'

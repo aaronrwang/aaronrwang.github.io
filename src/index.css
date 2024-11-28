@@ -1,4 +1,14 @@
 body {
     background: linear-gradient(180deg, rgba(255, 253, 208, 0.8), rgba(182, 178, 165, 0.5));
-    font-family: Trebuchet;
+    /* font-family: Trebuchet; */
+    font-family: "Palatino", serif;
+}
+
+@font-face {
+    font-family: "Palatino";
+    src: url("path/to/palatino.woff2") format("woff2"),
+        url("path/to/palatino.woff") format("woff"),
+        url("path/to/palatino.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
