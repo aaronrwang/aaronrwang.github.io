@@ -14,7 +14,7 @@ export const ecp = [
     {
         'id': 'EG-40421',
         'name': 'Business I',
-        'grade': 'IP',
+        'grade': 'A-',
         'description': 'The course is designed to improve the effectiveness of engineers working in corporations by teaching how and why businesses operate. Subjects covered include business financial reporting, business plans, the development processes, project management, the supply chain, and a history of quality topics. Numerous guest speakers are utilized to give the students exposure to successful business executives and reinforce the business processes covered in class. Fall.'
     },
     {

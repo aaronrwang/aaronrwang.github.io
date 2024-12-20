@@ -22,47 +22,48 @@ export const cs = {
         {
             'id': 'CSE-20221',
             'name': 'Logic Design',
-            'grade': 'IP',
+            'grade': 'A',
             'description': 'Boolean algebra and switching circuits, Karnaugh maps, design of combinational and of sequential logic networks, and sequential machines.'
         },
         {
             'id': 'CSE-20289',
             'name': 'Systems Programming',
-            'grade': 'IP',
+            'grade': 'A',
             'description': 'Systems Programming is a core Computer Science course that explores the fundamentals of computing systems. This course introduces students to the Unix programming environment where they will explore numerical representation, memory management, system calls, data structures, networking, and concurrency. Examining these topics will enable students to become familiar and comfortable with the lower level aspects of computing, while providing the foundation for further study in subsequent systems courses such as computer architecture and operating systems.'
         },
         {
             'id': 'CSE-20312',
             'name': 'Data Structures',
-            'grade': 'IP',
-            'description': 'This is the second part of a two-course introduction-to-computing sequence intended for Computer Science and Computer Engineering majors. This course deepens and broadens student exposure to imperative and object-oriented programming and data structures. Topics covered include modularity, specification, data abstraction, classes and objects, genericity, inheritance. This course will focus these topics on design and use of elementary data structures such as lists, stacks, queues, and trees, as well as advanced techniques such as divide-and-conquer, sorting, searching and graph algorithms. More advanced data structures such as priority queues and search trees will also be covered.'
+            'grade': 'A',
+            'description': 'This is the second part of a two-course introduction-to-computing sequence intended for Computer Science and Computer Engineering majors. This course deepens and broadens student exposure to imperative and object-oriented programming and data structures. Topics covered include modularity, specification, data abstraction, classes and objects, genericity, inheritance. This course will focus these topics on design and use of elementary data structures such as lists, stacks, queues, and trees, as well as advanced techniques such as divide-and-conquer, sorting, searching and graph algorithms. More advanced data structures such as priority queues and search trees will also be covered.',
+            'ta': true
         }
     ],
     'column-2': [
         {
             'id': 'CSE-30151',
             'name': 'Theory of Computing',
-            'grade': 'N/A',
+            'grade': 'IP',
             'description': 'Introduction to formal languages and automata, computability theory, and complexity theory with the goal of developing understanding of the power and limits of different computational models. Topics covered include: regular languages and finite automata; context-free grammars and pushdown automata; Turing machines; undecidable languages; the classes P and NP; NP completeness.'
         },
         {
             'id': 'CSE-30332',
             'name': 'Programming Paradigms',
-            'grade': 'N/A',
+            'grade': 'IP',
             'description': 'Programming language overview: imperative and functional languages; logic programming. Scripting languages and tools. Development environments. Multilanguage interfacing. Case studies. Comprehensive programming practice using several languages.'
         },
         {
             'id': 'CSE-30341',
             'name': 'Operating Systems',
-            'grade': 'N/A',
+            'grade': 'IP',
             'description': 'Introduction to all aspects of modern operating systems. Topics include process structure and synchronization, interprocess communication, memory management, file systems, security, I/O, and distributed files systems.'
         },
 
         {
             'id': 'CSE-40771',
-            'name': 'Distributed Systems',
-            'grade': 'N/A',
-            'description': 'A distributed system is any system of independent computers that communicate and cooperate via a newtork. Distributed systems are widely used in many settings spanning cloud services, mobile computers, internet of things, machine learning systems, interplanetary communications, and more. This course will introduce students to the fundamental properties of distributed systems, and develop techniques for building systems that are reliable, consistent, and scalable. Topics will include remote procedure call, logging and checkpointing, replication, consistency, fault tolerance, security and privacy, and more. The course will include a substantial amount of programming to build several working distributed systems that implement scalable data storage, large scale computation, and reliable communication. A course project is required. Graduate students enrolled in 60771 will additional study foundational papers in the field on these topics.'
+            'name': 'Computer Architecture',
+            'grade': 'IP',
+            'description': 'Introduction to basic architectural concepts that are present in current scalar machines, together with an introduction to assembly language programming, computer arithmetic, and performance evaluation. Commercial computer-aided-design software is used to deepen the student\'s understanding of the top-down processor design methodology. MIPS-based assembly language will be used.'
         },
         {
             'id': 'CSE-40113',

@@ -27,7 +27,7 @@ export const math = {
         {
             'id': 'MATH-20750',
             'name': 'Differential Equations',
-            'grade': 'N/A',
+            'grade': 'IP',
             'description': 'An introduction to differential equations. Topics include first-order equations, n-th order linear equations, power series methods, systems of first order linear equations, non-linear systems and stability.'
         }
     ],
@@ -35,7 +35,7 @@ export const math = {
         {
             'id': 'ACMS-30530',
             'name': 'Probability',
-            'grade': 'IP',
+            'grade': 'A',
             'description': 'An introduction to the theory of probability, with applications to the physical sciences and engineering. Topics include discrete and continuous random variables, conditional probability and independent events, generating functions, special discrete and continuous random variables, laws of large numbers and the central limit theorem. The course emphasizes computations with the standard distributions of probability theory and classical applications of them.'
         },
         {

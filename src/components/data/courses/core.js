@@ -54,9 +54,9 @@ export const core = [
         'description': ''
     },
     {
-        'id': 'HIST-1',
-        'name': 'History Elective',
-        'grade': 'N/A',
-        'description': ''
+        'id': 'HIST-22407',
+        'name': 'World War II',
+        'grade': 'IP',
+        'description': '"The Second World War is the largest single event in human history, fought across six of the world\'s seven continents and all its oceans. It killed fifty million human beings, left hundreds of millions of others wounded in mind or body and materially devastated much of the heartland of civilization." The above quote from historian John Keegan summarizes the significance of studying the Second World War. In this class, students will receive an introduction to the largest conflict in human history, from the origins of the war in Asia and Europe to the postwar settlements that continue to shape the modern world. Class content will focus on the military, diplomatic, and political narratives of the war, while exploring the lived experience of the war through primary source readings. This course satisfies the university history requirement and is open to all students; no previous knowledge of the topic is required.'
     }
 ]
