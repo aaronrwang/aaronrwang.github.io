@@ -13,7 +13,7 @@ export const experience = {
             "img": ND,
             "title": "Teacher's Assistant",
             "location": "Notre Dame, IN",
-            "description": "&bull; Hosting office hours weekly to further explain concepts and supplement in-class lectures<br/>&bull; Creating and grading problem sets for 80+ students every week"
+            "description": "Discrete Math (Fall 2024, 2025)<br/>Data Structures (Spring 2025)<br/>&bull; Hosting office hours weekly to further explain concepts and supplement in-class lectures<br/>&bull; Creating and grading problem sets for 80+ students every week"
         },
         {
             "cover": igostemcover,
