@@ -41,7 +41,7 @@ export const math = {
         {
             'id': 'ACMS-30600',
             'name': 'Statistical Methods and Data Analysis',
-            'grade': 'N/A',
+            'grade': 'IP',
             'description': 'Introduction to statistical methods with an emphasis on analysis of data. Estimation of central values. Parametric and nonparametric hypothesis tests. Categorical data analysis. Simple and multiple regression. Introduction to time series. The SOA has approved this course for VEE credit in Applied Statistics.'
         },
         {

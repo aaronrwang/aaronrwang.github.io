@@ -102,8 +102,9 @@ export default function Academics() {
                 <p>Engineering Corporate Practice: Macroeconomics, Microeconomics, and Integrated Business and Engineering Fundamentals</p>
                 <p>Engineering: Engineering Design, Chemistry, Physics I-II,Embedded Systems, and Engineering of Photography</p>
                 <p>Core: Foundational Theology and Business Ethics Philosophy Seminar</p>
+                <p>Online: UDEMY: React 2024 Guide (IP), Complete Javascript (parts), Data Structure & Algorithms; Harvard CS50</p>
             </div>
-            <div className="courses-extra">
+            {/* <div className="courses-extra">
                 <h3>Online courses</h3>
                 <ul>
                     <li><a href="https://nd.udemy.com/course/react-the-complete-guide-incl-redux/">UDEMY: React 2024 Guide (IP)</a></li>
@@ -111,7 +112,7 @@ export default function Academics() {
                     <li><a href="https://nd.udemy.com/course/data-structures-algorithms-cpp/">UDEMY: Data Structures & Algorithms</a></li>
                     <li><a href="https://pll.harvard.edu/course/cs50-introduction-computer-science">Harvard: CS50</a></li>
                 </ul>
-            </div>
+            </div> */}
         </section >
 
     );

@@ -18,7 +18,7 @@ export default function () {
                     <b>Computer Science<br />Applied Computational Mathematics and Statistics</b>
                 </div>
                 <p>I am currently interested in Full stack development, with a particular interest in creating interactive, user-centric applications.</p>
-                <a id="resume-download" target="_blank" href="https://drive.google.com/file/d/1L27-BcgAWWlgH5riIIo80yy1umlHhj2b/view?usp=sharing">
+                <a id="resume-download" target="_blank" href="https://drive.google.com/file/d/1hQEJ8JxSfK0S432iqlYz3kVYIHUYVZbA/view?usp=sharing">
                     <b>View Resume</b>
                     <img src={download} height="20px" />
                 </a>

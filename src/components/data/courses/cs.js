@@ -55,7 +55,7 @@ export const cs = {
         {
             'id': 'CSE-30341',
             'name': 'Operating Systems',
-            'grade': 'IP',
+            'grade': 'N/A',
             'description': 'Introduction to all aspects of modern operating systems. Topics include process structure and synchronization, interprocess communication, memory management, file systems, security, I/O, and distributed files systems.'
         },
 

@@ -5,6 +5,9 @@ import emailjs from '@emailjs/browser';
 
 export default function Contact() {
     const form = useRef();
+    const name = useRef();
+    const email = useRef();
+    const message = useRef();
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -25,6 +28,9 @@ export default function Contact() {
                     console.log('FAILED...', error.text);
                 },
             );
+        name.current.value = ''
+        email.current.value = ''
+        message.current.value = ''
     };
     function reset() {
         const sentDiv = document.querySelector('.sent');
@@ -41,9 +47,9 @@ export default function Contact() {
                     <h2>Contact Me</h2>
                     <hr />
                 </div>
-                <input type="text" name="name" placeholder="Your Name" className="contact-inputs" required />
-                <input type="text" name="email" placeholder="Your Email" className="contact-inputs" required />
-                <textarea name="message" placeholder="Your Message" className="contact-inputs" required></textarea>
+                <input type="text" name="name" placeholder="Your Name" className="contact-inputs" required ref={name} />
+                <input type="text" name="email" placeholder="Your Email" className="contact-inputs" required ref={email} />
+                <textarea name="message" placeholder="Your Message" className="contact-inputs" required ref={message}></textarea>
                 <button type="submit">Submit</button>
                 <div className="sent" onClick={reset} style={{ 'visibility': 'hidden', 'marginBottom': '10px' }}>Thank You</div>
             </form>

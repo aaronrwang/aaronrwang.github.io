@@ -1,13 +1,23 @@
 import connectfour from '../../assets/projects/connectfour.jpeg';
 import ccs from '../../assets/projects/ccs.jpeg';
 import gostop from '../../assets/projects/GoStop.jpeg';
+import war from '../../assets/projects/War.jpeg';
+import memory from '../../assets/projects/Memory.jpeg';
+import tangobot from '../../assets/projects/Tangobot.jpeg';
 export const projects = [
+    // {
+    //     'title': 'Christian Collections',
+    //     'github': 'https://github.com/aaronrwang/Blog',
+    //     'img': null,
+    //     'description': 'Built a webapp that solves the Linkedin Tango and posts detailed solutions each day to teach others how to play this game',
+    //     'skills': 'MERN Stack, System Design'
+    // },
     {
         'title': 'Tango Bot',
         'github': 'https://github.com/Elliotkim2/TangoBot',
-        'img': null,
+        'img': tangobot,
         'description': 'Built a webapp that solves the Linkedin Tango and posts detailed solutions each day to teach others how to play this game',
-        'skills': 'Python, sql, docker, Next.js'
+        'skills': 'Python PlayWright, Github Actions, MongoDB, Next.js, Typescript, Tailwind'
     },
     {
         'title': 'Go Stop (HwaTu)',
@@ -26,14 +36,14 @@ export const projects = [
     {
         'title': 'Memory',
         'github': 'https://github.com/aaronrwang/Memory-ios-app',
-        'img': null,
+        'img': memory,
         'description': 'Developed a memory card matching game in Swift, incorporating responsive animations. The project integrated custom sound effects using AVFoundation.',
         'skills': 'IOS App dev, Swift, UIKit, AVFoundation'
     },
     {
         'title': 'WarCard',
         'github': 'https://github.com/aaronrwang/War-ios-app',
-        'img': null,
+        'img': war,
         'description': 'Developed a fully functional War card game app in Swift, implementing UI design with UIKit, managing app lifecycle events and random number generation.',
         'skills': 'IOS App dev, Swift, UIKit'
     },
