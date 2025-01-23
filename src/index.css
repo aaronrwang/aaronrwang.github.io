@@ -3,12 +3,3 @@ body {
     /* font-family: Trebuchet; */
     font-family: "Palatino", serif;
 }
-
-@font-face {
-    font-family: "Palatino";
-    src: url("path/to/palatino.woff2") format("woff2"),
-        url("path/to/palatino.woff") format("woff"),
-        url("path/to/palatino.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
