@@ -1,1 +1,5 @@
+git add --all
+git add dist -f
+git commit -m "<message>"
+git push
 git subtree push --prefix dist origin gh-pages

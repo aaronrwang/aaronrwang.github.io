@@ -7,7 +7,7 @@ export const ecp = [
     },
     {
         'id': 'ECON-10010',
-        'name': 'Macroeconomics',
+        'name': 'Microeconomics',
         'grade': 'A',
         'description': 'An introduction to economics, with particular attention to the pricing mechanism, competitive and monopolistic markets, government regulation of the economy, labor-management relations and programs, income determination and public policy, trade and the international economy.'
     },
