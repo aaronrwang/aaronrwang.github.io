@@ -1,2 +1,1 @@
-Delete branch and then run this
 git subtree push --prefix dist origin gh-pages

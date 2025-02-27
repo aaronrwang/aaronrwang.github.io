@@ -2,12 +2,20 @@ import ND from '../../assets/Experience/ND.jpg';
 import igostem from '../../assets/Experience/igostem.png';
 import pcc from '../../assets/Experience/pcc.jpg';
 import delbarton from '../../assets/Experience/delbarton.jpg';
+import NDR from '../../assets/Experience/Cover/NDR.jpg';
 import NDcover from '../../assets/Experience/Cover/ND.jpg';
 import igostemcover from '../../assets/Experience/Cover/igostem.jpg';
 import pcccover from '../../assets/Experience/Cover/pcc1.jpg';
 import delbartoncover from '../../assets/Experience/Cover/delbarton.jpg';
 export const experience = {
     "work": [
+        {
+            "cover": NDR,
+            "img": ND,
+            "title": "Research Assistant",
+            "location": "Notre Dame, IN",
+            "description": "Web3DB Project; Led by Taeho Jung, Showkot Hossain, and Wenyi Tang<br/>&bull; Analyzed and researched relational databases, specifically PostgreSQL and MySQL, to design and implement an indexing mechanism within the Web3DB project."
+        },
         {
             "cover": NDcover,
             "img": ND,
