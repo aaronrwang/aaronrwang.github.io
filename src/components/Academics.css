@@ -293,3 +293,38 @@ h4.courses-description-title {
         display: block;
     }
 }
+
+#academics {
+    transform-origin: top;
+    transform: scale(1);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    #academics:has(.fade-trigger) {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Alternative approach using Intersection Observer polyfill */
+@supports (animation-timeline: view()) {
+    #academics {
+        animation: ShrinkIn ease both;
+        animation-timeline: view();
+    }
+}
+
+@keyframes ShrinkIn {
+    from {
+        transform: scale(1.2);
+    }
+
+    75% {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}

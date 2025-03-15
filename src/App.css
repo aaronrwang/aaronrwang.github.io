@@ -22,11 +22,3 @@ section h1 {
   align-items: center;
   justify-content: center;
 }
-
-div#root {
-  scroll-snap-type: block mandatory;
-}
-
-div#root section {
-  scroll-snap-align: center;
-}
