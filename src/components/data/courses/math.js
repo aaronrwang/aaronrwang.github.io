@@ -27,7 +27,7 @@ export const math = {
         {
             'id': 'MATH-20750',
             'name': 'Differential Equations',
-            'grade': 'IP',
+            'grade': 'A',
             'description': 'An introduction to differential equations. Topics include first-order equations, n-th order linear equations, power series methods, systems of first order linear equations, non-linear systems and stability.'
         }
     ],
@@ -41,7 +41,7 @@ export const math = {
         {
             'id': 'ACMS-30600',
             'name': 'Statistical Methods and Data Analysis',
-            'grade': 'IP',
+            'grade': 'A',
             'description': 'Introduction to statistical methods with an emphasis on analysis of data. Estimation of central values. Parametric and nonparametric hypothesis tests. Categorical data analysis. Simple and multiple regression. Introduction to time series. The SOA has approved this course for VEE credit in Applied Statistics.'
         },
         {
@@ -57,10 +57,10 @@ export const math = {
             'description': 'Introductory course on applied mathematics and computational modeling with emphasis on modeling of biological problems in terms of differential equations and stochastic dynamical systems. Students will be working in groups on several projects and will present them in class in the end of the course.'
         },
         {
-            'id': 'ACMS-1',
-            'name': 'Elective',
+            'id': 'ACMS-40842',
+            'name': 'Time Series Analysis',
             'grade': 'N/A',
-            'description': ''
+            'description': 'This is an introductory and applied course in time series analysis. Popular time series models and computational techniques for model estimation, diagnostic and forecasting will be discussed. Although the book focuses on financial data sets, other data sets, such as climate data, earthquake data and biological data, will also be included and discussed within the same theoretical framework.'
         }
     ]
 }

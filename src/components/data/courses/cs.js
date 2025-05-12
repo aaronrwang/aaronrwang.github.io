@@ -43,13 +43,13 @@ export const cs = {
         {
             'id': 'CSE-30151',
             'name': 'Theory of Computing',
-            'grade': 'IP',
+            'grade': 'A',
             'description': 'Introduction to formal languages and automata, computability theory, and complexity theory with the goal of developing understanding of the power and limits of different computational models. Topics covered include: regular languages and finite automata; context-free grammars and pushdown automata; Turing machines; undecidable languages; the classes P and NP; NP completeness.'
         },
         {
             'id': 'CSE-30332',
             'name': 'Programming Paradigms',
-            'grade': 'IP',
+            'grade': 'A',
             'description': 'Programming language overview: imperative and functional languages; logic programming. Scripting languages and tools. Development environments. Multilanguage interfacing. Case studies. Comprehensive programming practice using several languages.'
         },
         {
@@ -62,7 +62,7 @@ export const cs = {
         {
             'id': 'CSE-40771',
             'name': 'Computer Architecture',
-            'grade': 'IP',
+            'grade': 'A',
             'description': 'Introduction to basic architectural concepts that are present in current scalar machines, together with an introduction to assembly language programming, computer arithmetic, and performance evaluation. Commercial computer-aided-design software is used to deepen the student\'s understanding of the top-down processor design methodology. MIPS-based assembly language will be used.'
         },
         {
@@ -81,22 +81,22 @@ export const cs = {
     ],
     'column-3': [
         {
-            'id': 'CSE-1',
-            'name': 'CSE Elective',
+            'id': 'CSE-40243',
+            'name': 'Compilers',
             'grade': 'N/A',
-            'description': ''
+            'description': 'Compilers is a challenging and fun course for students who are planning a career in advanced software development. In this class, students will design and implement a complete compiler for a C-like language from top to bottom. The course brings together many different elements of computer science, ranging from the theoretical (formal grammar classes) to the very practical (x86 assembly language) with a pinch of software engineering in the middle. After completing the course, you will be able to write programs that manipulate computer languages in different ways, ranging from simple interactive calculators to programs that translate one language to another. Students completing the course may also experience some side effects: (1) You will learn how to use pointers really well. (2) You will gain experience in engineering a complex piece of software including revision control, testing, and evolution. (3) You will understand the C language inside and out, which will make you a better programmer all around.'
         },
         {
-            'id': 'CSE-2',
-            'name': 'CSE Elective',
+            'id': 'CSE-40432',
+            'name': 'Theory of Programming Languages',
             'grade': 'N/A',
-            'description': ''
+            'description': 'Introduction to the theory of programming languages. How to define programming languages using operational semantics and type systems, and how to prove things about them. Starting with the lambda calculus as a core, a simple programming language is built up, with higher-order functions and lexical scope; algebraic data types, polymorphic types, and type inference; state and control. Students will also gain experience with functional programming and writing interpreters.'
         },
         {
-            'id': 'CSE-3',
-            'name': 'CSE Elective',
+            'id': 'CSE-30264',
+            'name': 'Computer Networks',
             'grade': 'N/A',
-            'description': ''
+            'description': 'This course introduces students to fundamental topics on the principles, design, implementation, and performance of computer networks. Topics include: Internet architecture, protocols, socket programming, congestion control, switching and routing, local area networks, mobile and ad-hoc networks, network security, the end-to-end arguments and resource allocation.'
         },
 
         {

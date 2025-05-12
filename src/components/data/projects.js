@@ -30,7 +30,7 @@ export const projects = [
         'title': 'CCS Website',
         'github': 'https://github.com/ccsofnd/ccswebsite',
         'img': ccs,
-        'description': 'IN PROGRESS <br/>Built a website for the Chinese Cultural Society at Notre Dame.<br/> Focused on developing skills in React and UI Design.',
+        'description': 'Built a website for the Chinese Cultural Society at Notre Dame.<br/> Focused on developing skills in React and UI Design.',
         'skills': 'React, HTML, Javascript, CSS'
     },
     {

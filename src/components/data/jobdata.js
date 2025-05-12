@@ -7,8 +7,17 @@ import NDcover from '../../assets/Experience/Cover/ND.jpg';
 import igostemcover from '../../assets/Experience/Cover/igostem.jpg';
 import pcccover from '../../assets/Experience/Cover/pcc1.jpg';
 import delbartoncover from '../../assets/Experience/Cover/delbarton.jpg';
+import blcover from '../../assets/Experience/Cover/bl.jpg';
+import bl from '../../assets/Experience/bl.jpeg';
 export const experience = {
     "work": [
+        {
+            "cover": blcover,
+            "img": bl,
+            "title": "IT Intern",
+            "location": "Bridgewater, NJ",
+            "description": "TBD"
+        },
         {
             "cover": NDR,
             "img": ND,
