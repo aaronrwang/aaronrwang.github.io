@@ -8,6 +8,9 @@ import Engineering from './courses/Engineering.jsx';
 import Core from './courses/Core.jsx';
 import Down from './logos/Down.jsx'
 import { courses } from './data/courses.js';
+
+import Squares from './Squares';
+
 const defaultDescription = {
     'id': null,
     'name': 'Description',
@@ -39,7 +42,15 @@ export default function Academics() {
                         <h1 onClick={openCover}><Down /></h1>
                         <div className="cover-garage" />
                     </div> */}
+                    <Squares
+                        speed={0.1}
+                        squareSize={40}
+                        direction='diagonal' // up, down, left, right, diagonal
+                        borderColor='#000'
+                        hoverFillColor='#222'
+                    />
                     <div className="courses-main">
+
                         <div className="courses-left">
                             <div className="courses-top">
                                 <ComputerScience onClick={changeDescription} globalActiveID={id} />

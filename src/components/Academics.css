@@ -109,9 +109,9 @@
 
 
 #academics .courses-main {
-    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><circle cx="10" cy="10" r="1" fill="black"/></svg>');
+    /* background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><circle cx="10" cy="10" r="1" fill="black"/></svg>');
     background-size: 10px 10px;
-    background-repeat: repeat;
+    background-repeat: repeat; */
     display: grid;
     grid-template-columns: 75% 25%;
 }
