@@ -46,7 +46,7 @@ export default function Academics() {
                         speed={0.1}
                         squareSize={40}
                         direction='diagonal' // up, down, left, right, diagonal
-                        borderColor='#000'
+                        borderColor='#666'
                         hoverFillColor='#222'
                     />
                     <div className="courses-main">

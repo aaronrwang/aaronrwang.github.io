@@ -12,7 +12,7 @@
     /* Lighter purple */
     --future-color: rgba(64, 64, 64, 0.1);
     /* No change */
-    --background-color: #444;
+    --background-color: #F3F4F6;
     /* No change */
     --active-color: #28d7c8;
     /* Brighter aqua */
@@ -23,6 +23,7 @@
     flex: 1;
     text-align: center;
     font-size: 3rem;
+    color: var(--text-color);
 }
 
 #academics .courses-outer {
@@ -31,7 +32,8 @@
     height: 650px;
     z-index: 1;
     border-radius: 1.5rem;
-    background-color: rgba(240, 240, 190, 0.8);
+    /* background-color: rgba(240, 240, 190, 0.8); */
+    background-color: #E5E7EB;
     box-shadow: 0px 30px 40px 30px rgba(0, 0, 0, 0.4);
     /* animation: appear ease;
     animation-timeline: view();
@@ -140,7 +142,8 @@
 }
 
 .qwe {
-    background-color: rgba(206, 206, 181, 0.8);
+    /* background-color: rgba(206, 206, 181, 0.8); */
+    background: #F1F5F9;
     border: solid #222 2px;
     border-radius: 1rem;
 }
@@ -317,7 +320,7 @@ h4.courses-description-title {
 
 @keyframes ShrinkIn {
     from {
-        transform: scale(1.2);
+        transform: scale(0.8);
     }
 
     75% {

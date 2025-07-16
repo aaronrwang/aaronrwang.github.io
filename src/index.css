@@ -1,5 +1,6 @@
 body {
-    background: linear-gradient(180deg, rgba(255, 253, 208, 0.8), rgba(182, 178, 165, 0.5));
+    /* background: linear-gradient(180deg, rgba(255, 253, 208, 0.8), rgba(182, 178, 165, 0.5)); */
+    background: var(--background-color);
     /* font-family: Trebuchet; */
     font-family: "Palatino", serif;
 }

@@ -1,11 +1,14 @@
 /* Navbar.css */
 .navbar {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 2rem);
+    /* full width minus 1rem margin on both sides */
     display: flex;
-    background-color: #333;
+    border-radius: 1rem;
+    background-color: var(--navbar-background);
     z-index: 10;
 }
 
@@ -35,20 +38,21 @@
 }
 
 .abc {
-    color: white;
+    color: var(--navbar-text);
     text-decoration: none;
-    padding: 0rem 0rem 1rem 0rem;
+    padding: 0rem 0rem 0.5rem 0rem;
     /* margin: 1rem; */
     font-size: 1.5rem;
     white-space: nowrap;
     border-bottom: 2px solid transparent;
     margin: 0rem 2rem;
+    transition: opacity 0.2s linear, border-bottom-color 0.2s linear;
 }
 
 .ab {
-    color: white;
+    color: var(--navbar-text);
     text-decoration: none;
-    padding: 0rem 0rem 1rem 0rem;
+    padding: 0rem 0rem 0.5rem 0rem;
     /* margin: 1rem; */
     font-size: 1.5rem;
     white-space: nowrap;
@@ -71,7 +75,7 @@
 .abc:hover,
 .abc.active {
     opacity: 1;
-    border-bottom-color: white;
+    border-bottom-color: var(--navbar-text);
 }
 
 
@@ -91,4 +95,13 @@
 
 .nav-contact-links li a {
     margin: 1rem;
+}
+
+.icon-link a {
+    color: var(--navbar-text);
+    transition: color 0.2s linear;
+}
+
+.icon-link a:hover {
+    color: var(--teal-accent);
 }

@@ -30,22 +30,26 @@
     text-align: center;
 }
 
+#education {
+    color: var(--text-color);
+}
+
 #education>h2 {
     margin: -2rem 4rem 1rem 4rem;
 }
 
 #aboutDescription p {
     padding: 0rem 4rem;
+    color: var(--text-color);
 }
 
 #aboutDescription #resume-download {
 
     border: solid black 2px;
     text-decoration: none;
-    color: black;
     padding: 1rem 2rem;
     border-radius: 2rem;
-    background-color: #21D0B3;
+    background-color: var(--teal-accent);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,7 +57,7 @@
 }
 
 #resume-download b {
-    color: white;
+    color: var(--text-contrast);
     white-space: nowrap;
     margin-right: 10px;
     font-size: 18px;
@@ -63,7 +67,7 @@
 
 
 #resume-download:hover {
-    background-color: #40d9c0;
+    background-color: var(--teal-accent);
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3);
     cursor: pointer;
     /* Change cursor to pointer */
@@ -80,6 +84,7 @@
 }
 
 #about h1 {
+    color: var(--text-color);
     font-size: 4rem;
     white-space: nowrap;
 }

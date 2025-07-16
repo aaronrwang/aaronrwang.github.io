@@ -17,9 +17,11 @@ export default function () {
         <section id="projects">
             <h1>Projects</h1>
             <div id='projects-grid'>
-                {projects.map((project, index) => (
-                    <Projectcard project={project} key={index} />
-                ))}
+                {projects.map((project, index) => {
+                    if (index < 10) {
+                        return <Projectcard project={project} key={index} />
+                    }
+                })}
             </div>
         </section>
     )
