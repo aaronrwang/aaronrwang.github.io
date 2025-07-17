@@ -5,11 +5,27 @@
     border-radius: 1rem;
     padding: 2rem;
     margin: 2rem;
+    box-shadow: 0px 0px 12px 2px rgba(255, 255, 255, 0.2);
+    transition: transform 0.5s ease, box-shadow 0.3s ease;
+    color: var(--text-color);
 }
+
+.card:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 12px 6px rgba(180, 180, 180, 0.2);
+}
+
+
+.card-title h4 {
+    margin: 0.75rem 0rem 0rem 0rem;
+}
+
 
 .card-content {}
 
-.card-header {}
+.card-header {
+    margin: 0rem;
+}
 
 
 .icon {
@@ -24,5 +40,4 @@
     width: 5rem;
     border-radius: 1rem;
     background-color: var(--bg-white);
-    /* border: 2px solid black; */
 }

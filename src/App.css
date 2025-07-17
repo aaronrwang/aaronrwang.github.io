@@ -40,8 +40,9 @@ section h1 {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background-color: #222;
+    --background-color: #121416;
     --text-color: white;
     --text-contrast: black;
+    --card-background: #212023;
   }
 }

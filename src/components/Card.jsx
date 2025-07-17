@@ -14,9 +14,9 @@ export default function Card({ job }) {
                 <div className="card-header">
                     <div className="icon">
                         <img src={job.img} className="icon-img" />
-                        <h2>{job.company}</h2>
+                        <h2>{job.title}</h2>
                     </div>
-                    <div className="card-title"><h4>{job.title} | {job.location}</h4></div>
+                    <div className="card-title"><h4>{job.company} | {job.location}</h4></div>
                 </div>
                 <div className="card-body">
                     <hr />
