@@ -10,10 +10,12 @@ export default function Card({ job }) {
     }
     return (
         <div className="card" onClick={viewContent}>
-            <div className={`cover-img ${img ? '' : 'fade'}`}><img src={job.cover} height="240px" width="400px" /><h3 className="image-header">{job.title}</h3></div>
             <div className="card-content">
                 <div className="card-header">
-                    <div className="icon"><img src={job.img} className="icon" /></div>
+                    <div className="icon">
+                        <img src={job.img} className="icon-img" />
+                        <h2>{job.company}</h2>
+                    </div>
                     <div className="card-title"><h4>{job.title} | {job.location}</h4></div>
                 </div>
                 <div className="card-body">

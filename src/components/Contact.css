@@ -12,7 +12,7 @@
     width: 75vw;
     padding: 0px 2vw;
     border-radius: 1rem;
-    background-color: #eee;
+    background-color: var(--card-background);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,7 +29,7 @@
 
 .contact-title h2 {
     font-weight: 600;
-    color: #143c6e;
+    color: var(--accent-two);
     font-size: 40px;
     margin-bottom: 5px;
 }
@@ -38,7 +38,7 @@
     border: none;
     width: 75vw;
     height: 5px;
-    background-color: #F2EBAE;
+    background-color: var(--accent-three);
 }
 
 .contact-inputs {
@@ -62,14 +62,14 @@ form textarea {
 .contact-inputs:focus {
     /* border-bottom: 2px solid black; */
     transition: border 0.3s;
-    background-color: #f8f8f8;
+    background-color: var(--textbox-color);
     border-radius: 0.5rem;
 }
 
 form button {
-    color: white;
-    border: 2px solid black;
-    background-color: #21D0B3;
+    color: var(--text-contrast);
+    border: 2px solid var(--text-color);
+    background-color: var(--teal-accent);
     height: 30px;
     width: 100px;
     border-radius: 15px;

@@ -27,8 +27,8 @@ export default function App() {
     <>
       <Navbar onScroll={handleScroll} />
       <About />
-      <Project />
       <Experience />
+      <Project />
       <Academics />
       <Contact />
       <footer>

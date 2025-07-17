@@ -7,11 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "vite build && git add dist -f && git commit -m \"Deploy website\" && git subtree push --prefix dist origin gh-pages"
   },
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@lottiefiles/dotlottie-react": "^0.9.1",
+    "gsap": "^3.13.0",
     "lottie-react": "^2.4.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",

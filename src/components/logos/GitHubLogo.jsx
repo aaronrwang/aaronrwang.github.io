@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MyIcon = ({ color = '#24292f', width = 98, height = 96 }) => (
+const MyIcon = ({ color = 'currentColor', width = 98, height = 96 }) => (
     <svg viewBox="0 0 98 96" width={width} height={height} xmlns="http://www.w3.org/2000/svg">
         <path
             fillRule="evenodd"

@@ -8,6 +8,7 @@
     width: 100%;
     font-size: 3rem;
     margin: 2rem 0;
+    color: var(--text-color);
 }
 
 #experience .work-activities {

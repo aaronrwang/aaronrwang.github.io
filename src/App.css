@@ -22,3 +22,26 @@ section h1 {
   align-items: center;
   justify-content: center;
 }
+
+
+:root {
+  --background-color: linear-gradient(180deg, rgba(255, 253, 208, 0.8), rgba(182, 178, 165, 0.5));
+  --navbar-background: rgba(48, 48, 48, 0.8);
+  --navbar-text: white;
+  --teal-accent: #40d9c0;
+  --card-background: #f0f0f0;
+  --text-color: black;
+  --text-contrast: white;
+  --accent-two: #143c6e;
+  --accent-three: #F2EBAE;
+  --textbox-color: #f8f8f8;
+  --bg-white: white;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background-color: #222;
+    --text-color: white;
+    --text-contrast: black;
+  }
+}
