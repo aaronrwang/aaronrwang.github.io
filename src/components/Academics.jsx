@@ -82,7 +82,7 @@ export default function Academics() {
                                 <h3>Key</h3>
                                 <div className="key-element">
                                     <div id='key-tested' className="key-color-box"></div>
-                                    AP
+                                    Complete
                                 </div>
                                 <div className="key-element">
                                     <div id='key-current' className="key-color-box"></div>

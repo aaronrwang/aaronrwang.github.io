@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    --tested-color: #666;
+    --tested-color: #999;
     /* No change */
     --current-color: #e2c70e;
     /* Brighter, softer gold */

@@ -59,7 +59,7 @@ export const math = {
         {
             'id': 'ACMS-40842',
             'name': 'Time Series Analysis',
-            'grade': 'N/A',
+            'grade': 'IP',
             'description': 'This is an introductory and applied course in time series analysis. Popular time series models and computational techniques for model estimation, diagnostic and forecasting will be discussed. Although the book focuses on financial data sets, other data sets, such as climate data, earthquake data and biological data, will also be included and discussed within the same theoretical framework.'
         }
     ]
