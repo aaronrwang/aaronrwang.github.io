@@ -42,13 +42,13 @@ export default function Academics() {
                         <h1 onClick={openCover}><Down /></h1>
                         <div className="cover-garage" />
                     </div> */}
-                    <Squares
+                    {/* <Squares
                         speed={0.1}
                         squareSize={40}
                         direction='diagonal' // up, down, left, right, diagonal
                         borderColor='#666'
                         hoverFillColor='#222'
-                    />
+                    /> */}
                     <div className="courses-main">
 
                         <div className="courses-left">
@@ -82,23 +82,23 @@ export default function Academics() {
                                 <h3>Key</h3>
                                 <div className="key-element">
                                     <div id='key-tested' className="key-color-box"></div>
-                                    Tested Out
+                                    AP
                                 </div>
                                 <div className="key-element">
                                     <div id='key-current' className="key-color-box"></div>
-                                    Current Class
+                                    Current
                                 </div>
                                 <div className="key-element">
                                     <div id='key-ta' className="key-color-box"></div>
-                                    Teacher's Assistant
+                                    TA
                                 </div>
                                 <div className="key-element">
                                     <div id='key-london' className="key-color-box"></div>
-                                    Study Abroad
+                                    London
                                 </div>
                                 <div className="key-element">
                                     <div id='key-future' className="key-color-box"></div>
-                                    Future Class
+                                    Future
                                 </div>
 
                             </div>
