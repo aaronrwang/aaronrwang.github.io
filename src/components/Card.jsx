@@ -1,27 +1,23 @@
-import GithubLogo from './logos/GitHubLogo.jsx'
 import './Card.css'
-import { useState } from 'react'
-import ND from '../assets/Experience/ND.jpg'
+import { motion, useInView } from 'framer-motion';
+import { useRef, } from 'react';
 
 export default function Card({ job }) {
-    const [img, setImg] = useState(true)
-    function viewContent() {
-        setImg((r) => !r)
-    }
+    const ref = useRef(null);
+    const inView = useInView(ref, { once: true, margin: '-100px' });
+
     return (
-        <div className="card" onClick={viewContent}>
+        <div className="card">
             <div className="card-content">
                 <div className="card-header">
-                    <div className="icon">
-                        <img src={job.img} className="icon-img" />
-                        <h2>{job.company}</h2>
+                    <img src={job.img} className="icon-img" />
+                    <div className="title">
+                        <h3>{job.title}</h3>
+                        <h5>{job.company}</h5>
                     </div>
-                    <div className="card-title"><h4>{job.title} | {job.location}</h4></div>
                 </div>
-                <div className="card-body">
-                    <hr />
-                    <p dangerouslySetInnerHTML={{ __html: job.description }}></p>
-                </div>
+                <hr />
+                <p dangerouslySetInnerHTML={{ __html: job.description }}></p>
             </div>
         </div>
     );

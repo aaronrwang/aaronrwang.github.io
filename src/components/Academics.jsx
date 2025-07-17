@@ -1,12 +1,13 @@
 import './Academics.css';
-import React, { useState } from 'react';
+import { useState, useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import ComputerScience from './courses/ComputerScience.jsx';
 import Mathematics from './courses/Mathematics.jsx';
 import Ecp from './courses/Ecp.jsx';
 import Engineering from './courses/Engineering.jsx';
 import Core from './courses/Core.jsx';
-import Down from './logos/Down.jsx'
+
 import { courses } from './data/courses.js';
 
 import Squares from './Squares';
@@ -17,7 +18,13 @@ const defaultDescription = {
     'grade': null,
     'description': null
 }
+
 export default function Academics() {
+    const refmain = useRef(null);
+    const inViewmain = useInView(refmain, { once: true, margin: '-100px' });
+    const refalt = useRef(null);
+    const inViewalt = useInView(refalt, { once: true, margin: '-100px' });
+
     const [description, setDescription] = useState(defaultDescription);
     const [id, setId] = useState(null);
     function changeDescription(course) {
@@ -36,7 +43,13 @@ export default function Academics() {
     return (
         <section id="academics">
             <h1>Courses</h1>
-            <div className="courses-outer">
+            <motion.div
+                className="courses-outer"
+                ref={refmain}
+                initial={{ opacity: 0, x: -100 }}
+                animate={inViewmain ? { opacity: 1, x: 0 } : {}}
+                transition={{ duration: 0.6, ease: 'easeOut' }}
+            >
                 <div className="courses-inner">
                     {/* <div className={coverClass}>
                         <h1 onClick={openCover}><Down /></h1>
@@ -82,7 +95,7 @@ export default function Academics() {
                                 <h3>Key</h3>
                                 <div className="key-element">
                                     <div id='key-tested' className="key-color-box"></div>
-                                    Complete
+                                    Passed
                                 </div>
                                 <div className="key-element">
                                     <div id='key-current' className="key-color-box"></div>
@@ -105,8 +118,13 @@ export default function Academics() {
                         </div>
                     </div>
                 </div>
-            </div>
-            <div className="courses-alt">
+            </motion.div>
+            <motion.div
+                className="courses-alt"
+                ref={refalt}
+                initial={{ opacity: 0, x: -100 }}
+                animate={inViewalt ? { opacity: 1, x: 0 } : {}}
+                transition={{ duration: 0.6, ease: 'easeOut' }}>
                 <p>The following are classes I have taken so far.</p>
                 <p>Computer Science Classes: Fundamentals of Computing, Discrete Math, Data Structures, Systems Programming and Logic Design.</p>
                 <p>Math: Calc I-III, Linear Algebra, Introduction to Probability</p>
@@ -114,7 +132,7 @@ export default function Academics() {
                 <p>Engineering: Engineering Design, Chemistry, Physics I-II,Embedded Systems, and Engineering of Photography</p>
                 <p>Core: Foundational Theology and Business Ethics Philosophy Seminar</p>
                 <p>Online: UDEMY: React 2024 Guide (IP), Complete Javascript (parts), Data Structure & Algorithms; Harvard CS50</p>
-            </div>
+            </motion.div>
             {/* <div className="courses-extra">
                 <h3>Online courses</h3>
                 <ul>

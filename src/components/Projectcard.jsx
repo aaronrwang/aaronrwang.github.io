@@ -1,5 +1,6 @@
 import GitHubLogo from './logos/GitHubLogo.jsx';
 import './Projects.css'
+
 export default function Projectcard({ project }) {
     return (
         <div className='project-card'>

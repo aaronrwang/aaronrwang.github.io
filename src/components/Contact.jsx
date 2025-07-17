@@ -1,6 +1,7 @@
 import r from './../assets/react.svg';
 import './Contact.css';
 import React, { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
@@ -8,6 +9,8 @@ export default function Contact() {
     const name = useRef();
     const email = useRef();
     const message = useRef();
+
+    const inView = useInView(form, { once: true, margin: '-100px' });
 
     const sendEmail = (e) => {
         e.preventDefault();
@@ -42,7 +45,14 @@ export default function Contact() {
     return (
         <section id="contact">
             <div className='whitespace'></div>
-            <form ref={form} onSubmit={sendEmail}>
+            <motion.form
+                ref={form}
+                onSubmit={sendEmail}
+                initial={{ opacity: 0, x: 100 }}
+                animate={inView ? { opacity: 1, x: 0 } : {}}
+                transition={{ duration: 0.6, ease: 'easeOut' }}
+
+            >
                 <div className="contact-title">
                     <h2>Contact Me</h2>
                     <hr />
@@ -52,7 +62,7 @@ export default function Contact() {
                 <textarea name="message" placeholder="Your Message" className="contact-inputs" required ref={message}></textarea>
                 <button type="submit">Submit</button>
                 <div className="sent" onClick={reset} style={{ 'visibility': 'hidden', 'marginBottom': '10px' }}>Thank You</div>
-            </form>
+            </motion.form>
         </section >
     );
 }

@@ -1,14 +1,19 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
+import './App.css';
+
 import Navbar from './components/Navbar.jsx';
 import About from './components/About.jsx';
 import Academics from './components/Academics.jsx';
 import Project from './components/Projects.jsx';
 import Experience from './components/Experience.jsx';
 import Contact from './components/Contact.jsx';
-import './App.css';
+
+import { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
+
 
 export default function App() {
+  const ref = useRef(null);
+  const inView = useInView(ref, { once: true });
 
   const handleScroll = (event) => {
     const targetId = event.target.getAttribute("href");
@@ -24,7 +29,12 @@ export default function App() {
   };
 
   return (
-    <>
+    <motion.div
+      ref={ref}
+      initial={{ opacity: 0, }}
+      animate={inView ? { opacity: 1 } : {}}
+      transition={{ duration: 1, ease: 'easeOut' }}
+    >
       <Navbar onScroll={handleScroll} />
       <About />
       <Experience />
@@ -34,7 +44,7 @@ export default function App() {
       <footer>
 
       </footer>
-    </>
+    </motion.div>
   );
 };
 

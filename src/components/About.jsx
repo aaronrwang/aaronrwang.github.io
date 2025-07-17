@@ -1,9 +1,10 @@
-import photo from "../assets/Photo.png";
 import './About.css';
+
 import animation from './../assets/animation.json';
 import Lottie from "lottie-react";
-import Dl from './logos/Download.jsx';
 import download from "./../assets/download.svg"
+
+
 export default function () {
     return (
         <section id="about">

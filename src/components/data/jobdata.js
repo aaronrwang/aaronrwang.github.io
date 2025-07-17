@@ -46,6 +46,7 @@ export const experience = {
         {
             "cover": pcccover,
             "img": pcc,
+            "company": "Princeton Christian Church",
             "title": "Senior Helper",
             "location": "Princetion, NJ",
             "description": "&bull; Managed daily schedules of camp groups and coordinated activities for 100+ campers (2023, 2024)<br/><br/>&bull; Trained 30+ volunteers on basic child care and camp rules<br/><br/>&bull; Educated children aged 3-10 about the Gospel"
@@ -53,6 +54,7 @@ export const experience = {
         {
             "cover": delbartoncover,
             "img": delbarton,
+            "company": "Delbarton",
             "title": "Math Tutor",
             "location": "Morristown, NJ",
             "description": "&bull; Co-ordinated appointments for school of 600+ students and 30+ tutors<br/><br/>&bull; Tutored 20+ peers over 2 years in Algebra, Geometry, and Calculus"
