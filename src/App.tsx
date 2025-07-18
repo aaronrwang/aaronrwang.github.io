@@ -1,6 +1,10 @@
 import './App.css'
 import Navbar from './components/Navbar';
-import CompleteTimeline from './components/Timeline';
+import Home from './components/Home';
+import Experience from './components/Experience';
+import Projects from './components/Projects';
+import Courses from './components/Courses';
+import Contact from './components/Contact';
 import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 function App() {
 
@@ -11,11 +15,11 @@ function App() {
         <div className="h-16 w-full"></div>
         <div className="max-w-md mx-auto">
           <Routes>
-            <Route path="" element={<div>Aaron Wang</div>} />
-            <Route path="experience" element={<CompleteTimeline />} />
-            <Route path="projects" element={<div>Projects</div>} />
-            <Route path="courses" element={<div>Courses</div>} />
-            <Route path="contact" element={<div>Contact</div>} />
+            <Route path="" element={<Home />} />
+            <Route path="experience" element={<Experience />} />
+            <Route path="projects" element={<Projects />} />
+            <Route path="courses" element={<Courses />} />
+            <Route path="contact" element={<Contact />} />
 
           </Routes>
         </div>

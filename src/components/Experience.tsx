@@ -40,7 +40,7 @@ const items = [
   },
 ]
 
-export default function CompleteTimeline() {
+export default function Experience() {
   return (
     <Timeline defaultValue={2} className="text-left">
       {items.map((item) => (
