@@ -12,9 +12,6 @@ dist
 dist-ssr
 *.local
 
-# notes
-notes.txt
-
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
@@ -25,6 +22,3 @@ notes.txt
 *.njsproj
 *.sln
 *.sw?
-
-#API Keys
-.env
