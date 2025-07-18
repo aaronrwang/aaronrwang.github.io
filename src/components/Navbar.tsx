@@ -28,9 +28,9 @@ const navigationLinks = [
 
 export default function Navbar() {
   const active = useLocation().pathname
-  console.log(active)
+
   return (
-    <header className="border-b px-4 md:px-6">
+    <header className="border-b px-4 md:px-6 sticky top-0 z-1000">
       <div className="flex h-16 items-center justify-between gap-4">
         {/* Left side */}
         <div className="flex flex-1 items-center gap-2">

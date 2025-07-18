@@ -13,36 +13,51 @@ const items = [
   {
     id: 1,
     date: "Jun 2025 - Present",
-    title: "Project Kickoff",
+    title: "IT Intern @ Bausch + Lomb",
     description:
-      "Initial team meeting and project scope definition. Established key milestones and resource allocation.",
+      "Lorem Ipsum: Initial team meeting and project scope definition. Established key milestones and resource allocation.",
   },
   {
     id: 2,
     date: "Aug 2024 - Present",
-    title: "Design Phase",
+    title: "Teacher's Assistant @ University of Notre Dame",
     description:
-      "Completed wireframes and user interface mockups. Stakeholder review and feedback incorporated.",
+      "Lorem Ipsum: Completed wireframes and user interface mockups. Stakeholder review and feedback incorporated.",
   },
   {
     id: 3,
     date: "Feb 2025 - May 2025",
-    title: "Development Sprint",
+    title: "Research Assistant @ University of Notre Dame",
     description:
-      "Backend API implementation and frontend component development in progress.",
+      "Lorem Ipsum: Backend API implementation and frontend component development in progress.",
   },
   {
     id: 4,
     date: "Earlier",
     title: "Testing & Deployment",
     description:
-      "Quality assurance testing, performance optimization, and production deployment preparation.",
+      "Lorem Ipsum: Quality assurance testing, performance optimization, and production deployment preparation.",
+  },
+  {
+    id: 5,
+    date: "Earlier",
+    title: "Testing & Deployment",
+    description:
+      "Lorem Ipsum: Quality assurance testing, performance optimization, and production deployment preparation.",
+  },
+  {
+    id: 6,
+    date: "Earlier",
+    title: "Testing & Deployment",
+    description:
+      "Lorem Ipsum: Quality assurance testing, performance optimization, and production deployment preparation.",
   },
 ]
 
 export default function Experience() {
-  return (
-    <Timeline defaultValue={2} className="text-left">
+  return (<>
+    <h1 className="text-2xl pb-2 border-b w-1/2 mb-4">Experience</h1>
+    <Timeline defaultValue={3} className="text-left">
       {items.map((item) => (
         <TimelineItem key={item.id} step={item.id}>
           <TimelineHeader>
@@ -55,5 +70,6 @@ export default function Experience() {
         </TimelineItem>
       ))}
     </Timeline>
+  </>
   )
 }

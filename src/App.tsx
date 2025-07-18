@@ -12,8 +12,8 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <div className="h-16 w-full"></div>
-        <div className="max-w-md mx-auto">
+        <div className="h-16 w-full "></div>
+        <div className="px-8 flex flex-col items-center">
           <Routes>
             <Route path="" element={<Home />} />
             <Route path="experience" element={<Experience />} />
