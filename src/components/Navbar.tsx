@@ -1,36 +1,46 @@
-import { HouseIcon, InboxIcon, IdCard, SchoolIcon, ContactIcon } from "lucide-react"
+import { HouseIcon, InboxIcon, IdCard, SchoolIcon, ContactIcon, FileText, GraduationCap } from "lucide-react"
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 import { useLocation } from "react-router-dom";
 
 import { Button } from "@/components/ui/button"
+
 import {
   NavigationMenu,
   NavigationMenuItem,
   NavigationMenuLink,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu"
+
 import {
   Popover,
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover"
 
+import { useState, useEffect } from 'react';
 // Navigation links array
 const navigationLinks = [
   { href: "#", label: "Home", icon: HouseIcon },
-  { href: "#experience", label: "Experience", icon: IdCard },
+  { href: "#experience", label: "Experience", icon: FileText },
   { href: "#projects", label: "Projects", icon: InboxIcon },
-  { href: "#courses", label: "Courses", icon: SchoolIcon },
+  { href: "#courses", label: "Courses", icon: GraduationCap },
   { href: "#contact", label: "Contact", icon: ContactIcon },
 ]
 
 export default function Navbar() {
+  const [navReset, setNavReset] = useState(0);
   const active = useLocation().pathname
+  const [expanded, setExpanded] = useState(navReset !== 0);
+  useEffect(() => {
+    // Set aria-expanded to true a tick after mount
+    const timeout = setTimeout(() => setExpanded(false), 1);
+    return () => clearTimeout(timeout);
+  }, [navReset]);
 
   return (
-    <header className="border-b px-4 md:px-6 sticky top-0 z-1000">
+    <header className="border-b px-4 md:px-6 sticky top-0 z-1000 opacity-100 bg-[var(--background)]/90" key={navReset}>
       <div className="flex h-16 items-center justify-between gap-4">
         {/* Left side */}
         <div className="flex flex-1 items-center gap-2">
@@ -41,6 +51,8 @@ export default function Navbar() {
                 className="group size-8 md:hidden"
                 variant="ghost"
                 size="icon"
+                aria-expanded={expanded}
+                onClick={() => setExpanded(!expanded)}
               >
                 <svg
                   className="pointer-events-none"
@@ -69,13 +81,13 @@ export default function Navbar() {
                 </svg>
               </Button>
             </PopoverTrigger>
-            <PopoverContent align="start" className="w-36 p-1 md:hidden">
+            <PopoverContent align="start" className="w-36 p-1 md:hidden z-1100">
               <NavigationMenu className="max-w-none *:w-full">
                 <NavigationMenuList className="flex-col items-start gap-0 md:gap-2">
                   {navigationLinks.map((link, index) => {
                     const Icon = link.icon
                     return (
-                      <NavigationMenuItem key={index} className="w-full">
+                      <NavigationMenuItem key={index} className="w-full" onClick={() => { setNavReset((e) => e + 1) }}>
                         <NavigationMenuLink
                           href={link.href}
                           className="flex-row items-center gap-2 py-1.5"

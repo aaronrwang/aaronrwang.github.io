@@ -13,34 +13,45 @@ interface Item {
   grade?: string
 }
 
+interface Course {
+  id: string
+  name: string
+  nickname?: string
+  link?: string
+  grade?: string
+  description?: string
+  ta?: boolean
+  abroad?: boolean
+}
+
 const items: Record<string, Item> = {
   courses: {
     name: "Courses",
-    children: ["readme"],
   },
   readme: { name: "README.md", grade: "N/A" },
 }
+items.courses.children = ["readme"]
 
 for (const category in courses) {
   items.courses.children.push(category)
-  console.log(category);
-  items[category] = { name: category, children: [] }
-  for (const course of courses[category]) {
-    const id = course.id
-    console.log(id)
-    items[category].children.push(id)
-    items[id] = { name: course.name, grade: course.grade }
+  items[category] = { name: category }
+  items[category].children = []
+  if (courses !== undefined && courses[category] !== undefined) {
+    for (const item of courses[category]) {
+      const course = item as Course;
+      const id = course.id
+      items[category].children.push(id)
+      let name = course.nickname || course.name;
+      items[id] = { name: name, grade: course.grade }
+
+    }
   }
+
 }
-// for (const course of eg) {
-//   items.engineering.children.push(course.id);
-//   items[course.id] = { name: course.name };
-// }
 
 const indent = 20
 
 export default function FileTree(props: any) {
-  // console.log(props)
   const tree = useTree<Item>({
     initialState: {
       expandedItems: ["engineering", "frontend", "design-system"],
@@ -74,7 +85,7 @@ export default function FileTree(props: any) {
           {tree.getItems().map((item) => {
             return (
               <TreeItem key={item.getId()} item={item}>
-                <TreeItemLabel onClick={() => item.isFolder() ? undefined : props.setactivecourse(item.getItemName())} className="before:bg-background relative before:absolute before:inset-x-0 before:-inset-y-0.5 before:-z-10">
+                <TreeItemLabel onClick={() => item.isFolder() ? undefined : props.setactivecourse(item.getId())} className="before:bg-background relative before:absolute before:inset-x-0 before:-inset-y-0.5 before:-z-10">
                   <span className="flex items-center gap-2">
                     {item.isFolder() ? (
                       item.isExpanded() ? (
@@ -95,7 +106,7 @@ export default function FileTree(props: any) {
                             }
                           </>
                           :
-                          <FileIcon color='white' className="text-muted-foreground pointer-events-none size-4" />
+                          <FileIcon color='gray' className="text-muted-foreground pointer-events-none size-4" />
                         }
                       </>
                     )}

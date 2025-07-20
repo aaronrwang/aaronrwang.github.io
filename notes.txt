@@ -1,0 +1,3 @@
+popover for contact
+Tabs for project
+swipe left and right for work vs volunteer experience with motion animation.

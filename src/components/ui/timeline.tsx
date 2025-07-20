@@ -79,7 +79,7 @@ function TimelineContent({
   return (
     <div
       data-slot="timeline-content"
-      className={cn("text-muted-foreground text-sm", className)}
+      className={cn("text-muted-foreground text-sm whitespace-pre-line", className)}
       {...props}
     />
   )

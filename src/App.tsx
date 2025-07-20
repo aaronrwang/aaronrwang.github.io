@@ -13,7 +13,7 @@ function App() {
       <Router>
         <Navbar />
         <div className="h-16 w-full "></div>
-        <div className="px-8 flex flex-col items-center">
+        <div className="px-0 md:px-8 flex flex-col items-center">
           <Routes>
             <Route path="" element={<Home />} />
             <Route path="experience" element={<Experience />} />
@@ -23,6 +23,8 @@ function App() {
 
           </Routes>
         </div>
+        <div className="h-16 w-full "></div>
+
       </Router>
 
       {/* <File /> */}

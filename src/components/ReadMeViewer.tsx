@@ -1,24 +1,50 @@
 import MarkdownPreview from '@uiw/react-markdown-preview';
 import clsx from 'clsx';
-import { courses } from './data/courses';
+import { README, courses } from './data/courses';
 
-const README = `
-# README.md
+interface Course {
+  id: string
+  name: string
+  nickname?: string
+  link?: string
+  grade?: string
+  description?: string
+  ta?: boolean
+  abroad?: boolean
+}
 
-On this page, you can view the classes I've taken and a little description about each class along with my projects, homeworks, and grade if possible.
-
-`
 const allcourses = Object.values(courses).flat();
 
 
 function MyComponent(props: any) {
-  console.log(props.fileName)
   let source = README;
-  if (props.fileName !== 'README.md') {
-    const course = allcourses.filter(item => item.name === props.fileName)[0];
-    source = Object.entries(course)
-      .map(([key, value]) => `**${key}**: ${value}`)
-      .join('\n\n');
+  if (props.fileName !== 'readme') {
+    const course: Course = allcourses.filter(item => item.id === props.fileName)[0];
+    source =
+      `# ${course.name}
+
+> **Course Code:** \`${course.id}\`  
+> ${course.grade === 'Pass' ? '**Tested Out**' : `**Grade:** ${course.grade}`}
+
+
+<style>
+.grow{
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.grow:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+</style>
+
+
+${course.link ? `<a href="${course.link}" target="_blank" rel="noopener noreferrer"><button style="padding:6px 12px; font-size:14px; border:none; background:#1e88e5; color:white; border-radius:4px;" class="grow">View Coursework/Projects</button></a>` : ""}
+
+
+---
+### Course Description
+${course.description}
+`
   }
 
 
@@ -26,6 +52,7 @@ function MyComponent(props: any) {
     <MarkdownPreview
       source={source}
       className={clsx("text-left p-8", props.className)}
+      style={{ color: 'var(--primary)' }}
     />
   );
 }

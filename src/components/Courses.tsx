@@ -4,7 +4,7 @@ import ReadmeViewer from './ReadMeViewer';
 import { useEffect, useState } from "react";
 
 export default function Courses() {
-  const [activeCourse, setActiveCourse] = useState('README.md');
+  const [activeCourse, setActiveCourse] = useState('readme');
   const [height, setWindowHeight] = useState(window.innerHeight - 192);
   const [isSmUp, setIsSmUp] = useState(window.innerWidth >= 640);
 
@@ -24,7 +24,6 @@ export default function Courses() {
       window.removeEventListener("resize", handleResize);
     };
   }, []);
-  console.log(activeCourse)
 
   return (
     <>
@@ -32,18 +31,17 @@ export default function Courses() {
         style={isSmUp ? { height: `${height}px` } : {}} >
         {/* Left Pane */}
         <div
-          className="w-full sm:w-[260px] h-full overflow-auto sm:border-r border rounded sm:rounded-none"
+          className="w-full sm:w-[260px] h-full overflow-auto sm:border-r border rounded-lg sm:rounded-none"
         >
-          <FileTree setactivecourse={(a: string) => { setActiveCourse(a); }} className="h-full overflow-auto pb-16" />
+          <FileTree setactivecourse={(a: string) => { setActiveCourse(a); }} className="h-full overflow-auto pb-16 rounded-lg sm:rounded-none" />
         </div>
         <div className="p-2 sm:hidden" />
 
 
         {/* Right Pane */}
-        <ReadmeViewer fileName={activeCourse} className="sm:flex-1 overflow-auto sm:w-full rounded sm:rounded-none" style={isSmUp ? { height: `${height}px` } : {}} />
+        <ReadmeViewer fileName={activeCourse} className="sm:flex-1 overflow-auto sm:w-full rounded-lg sm:rounded-none" style={isSmUp ? { height: `${height}px` } : {}} />
 
       </div >
-      <div className="p-[200rem]" />
     </>
   );
 }

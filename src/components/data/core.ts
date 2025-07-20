@@ -44,6 +44,7 @@ export const core = [
   {
     'id': 'BES-13188',
     'name': 'Old Money, New Money',
+    'nickname': 'Philo Seminar',
     'grade': 'B+',
     'description': 'The Catholicism and the Disciplines USEM course is designed to engage ideas from the Catholic tradition with the perspective of one or more disciplines and to engage issues of faith or normative questions both critically and constructively in light of that tradition. The course explores a topic, poses a question, or investigates a problem by encouraging students to consider relevant sources and scholarship in relationship to the Catholic tradition. The course will be taught in seminar style, encouraging active participation and discussion between faculty and students, with a particular emphasis on the development of a student\'s skills in writing and research.'
   },

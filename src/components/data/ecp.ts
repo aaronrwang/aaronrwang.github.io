@@ -13,13 +13,15 @@ export const ecp = [
   },
   {
     'id': 'EG-40421',
-    'name': 'Business I',
+    'name': 'Integrated Business and Engineering Fundamentals',
+    'nickname': 'Eg. Business I',
     'grade': 'A-',
     'description': 'The course is designed to improve the effectiveness of engineers working in corporations by teaching how and why businesses operate. Subjects covered include business financial reporting, business plans, the development processes, project management, the supply chain, and a history of quality topics. Numerous guest speakers are utilized to give the students exposure to successful business executives and reinforce the business processes covered in class. Fall.'
   },
   {
     'id': 'EG-40422',
-    'name': 'Business II',
+    'name': 'Advanced Integrated Business and Engineering Topics',
+    'nickname': 'Eg. Business II',
     'grade': 'N/A',
     'description': 'The second course in the sequence integrates the elements taught in the fundamentals course. Subjects covered include a team-oriented Web-based business simulation exercise, management, effective communications, and a review of leading-edge trends in modern corporations'
   },

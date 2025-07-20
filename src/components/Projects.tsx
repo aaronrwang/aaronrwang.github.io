@@ -1,55 +1,56 @@
+import { FaGithub } from 'react-icons/fa';
 import { useEffect, useState } from 'react';
-import { FaFolder, FaFile } from 'react-icons/fa';
 
-type FileItem = {
+type RepoData = {
   name: string;
-  path: string;
-  type: 'file' | 'dir';
   html_url: string;
+  description?: string;
+  stargazers_count?: number;
+  forks_count?: number;
+  language: string;
+  updated_at: string;
 };
 
-// const GITHUB_API = 'https://api.github.com/repos/aaronrwang/ND-Coursework/contents/ACMS%2020750%20Math%20Methods%20II';
-const GITHUB_API = 'PLEASE FAIL'
+export function GitHubRepoCard({ repo }: { repo: RepoData }) {
 
-export default function Projects() {
-  const [files, setFiles] = useState<FileItem[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [fail, setFail] = useState(false);
+  // const repo: RepoData = {
+  //   name: 'repo',
+  //   html_url: 'https://api.github.com/repos/aaronrwang/ND-Coursework',
+  //   language: 'c++',
+  //   updated_at: '5/12/2025',
+  // }
 
-  // useEffect(() => {
-  //   fetch(GITHUB_API)
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       setFiles(data);
-  //       setLoading(false);
-  //     })
-  //     .catch((err) => {
-  //       console.error('Error fetching files:', err);
-  //       setLoading(false);
-  //       setFail(true);
-  //     });
-  // }, []);
 
-  if (loading) return <div>Loading files...</div>;
-  if (fail) return <div> Failed to Retrieve Info</div>;
   return (
-    <div className="max-w-xl mx-auto mt-6">
-      <h2 className="text-xl font-semibold mb-4">Files in Repo</h2>
-      <ul className="space-y-2">
-        {files.map((file) => (
-          <li key={file.path} className="flex items-center gap-2 text-sm">
-            {file.type === 'dir' ? <FaFolder className="text-yellow-500" /> : <FaFile className="text-gray-600" />}
-            <a
-              href={file.html_url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:underline text-blue-600 dark:text-blue-300"
-            >
-              {file.name}
-            </a>
-          </li>
-        ))}
-      </ul>
+    <div className="border rounded-xl p-4 shadow-lg max-w-xl bg-white dark:bg-neutral-900 text-black dark:text-white">
+      <a href={repo.html_url} target="_blank" rel="noopener noreferrer" className="text-xl font-semibold flex items-center gap-2 hover:underline">
+        <FaGithub /> {repo.name}
+      </a>
+      <div className="flex gap-4 mt-3 text-sm text-gray-600 dark:text-gray-400">
+        <span>{repo.language}</span>
+        <span>Updated {new Date(repo.updated_at).toLocaleDateString()}</span>
+      </div>
+    </div>
+  );
+}
+export default function Projects() {
+  const [repos, setRepos] = useState([])
+  useEffect(() => {
+    fetch('https://api.github.com/users/aaronrwang/repos')
+      .then((res) => res.json())
+      .then((repos) => {
+        console.log(repos)
+        const targetRepos = repos.filter((r: any) => ['my-repo', 'another-repo'].includes(r.name));
+        setRepos(repos);
+      })
+      .catch(console.error);
+  }, []);
+
+  return (
+    <div className="flex flex-col gap-4">
+      {repos.map((repo: RepoData) => (
+        <GitHubRepoCard key={repo.html_url} repo={repo} />
+      ))}
     </div>
   );
 }
