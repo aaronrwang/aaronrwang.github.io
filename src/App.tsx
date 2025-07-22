@@ -4,7 +4,7 @@ import Home from './components/Home';
 import Experience from './components/Experience';
 import Projects from './components/Projects';
 import Courses from './components/Courses';
-import Component from './components/comp-381';
+import Contact from './components/Contact';
 import { Toaster } from 'sonner';
 import { useState } from 'react';
 
@@ -30,7 +30,7 @@ function App() {
         <div className="h-16 w-full" />
 
       </Router>
-      <Component />
+      <Contact />
       <Toaster position="bottom-left" />
 
 
