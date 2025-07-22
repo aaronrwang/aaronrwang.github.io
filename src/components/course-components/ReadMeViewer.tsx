@@ -1,6 +1,6 @@
 import MarkdownPreview from '@uiw/react-markdown-preview';
 import clsx from 'clsx';
-import { README, courses } from './data/courses';
+import { README, courses } from '../data/courses';
 
 interface Course {
   id: string

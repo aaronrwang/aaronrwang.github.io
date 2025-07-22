@@ -1,5 +1,5 @@
-import FileTree from './FileTree';
-import ReadmeViewer from './ReadMeViewer';
+import FileTree from './course-components/FileTree';
+import ReadmeViewer from './course-components/ReadMeViewer';
 
 import { useEffect, useState } from "react";
 
@@ -39,7 +39,7 @@ export default function Courses() {
 
 
         {/* Right Pane */}
-        <ReadmeViewer fileName={activeCourse} className="sm:flex-1 overflow-auto sm:w-full rounded-lg sm:rounded-none" style={isSmUp ? { height: `${height}px` } : {}} />
+        <ReadmeViewer fileName={activeCourse} className="sm:flex-1 overflow-auto sm:w-full rounded-lg border sm:rounded-none" style={isSmUp ? { height: `${height}px` } : {}} />
 
       </div >
     </>

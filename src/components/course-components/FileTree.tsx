@@ -3,7 +3,7 @@ import { useTree } from "@headless-tree/react"
 import { FileIcon, FileText, FilePenLine, FolderIcon, FolderOpenIcon } from "lucide-react"
 
 import { Tree, TreeItem, TreeItemLabel } from "@/components/ui/tree";
-import { courses } from './data/courses';
+import { courses } from '../data/courses';
 
 import clsx from 'clsx';
 
