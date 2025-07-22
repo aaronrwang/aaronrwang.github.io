@@ -20,7 +20,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover"
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 // Navigation links array
 const navigationLinks = [
   { href: "#", label: "Home", icon: HouseIcon },
@@ -31,29 +31,23 @@ const navigationLinks = [
 ]
 
 export default function Navbar() {
-  const [navReset, setNavReset] = useState(0);
+  const [open, setOpen] = useState(false);
   const active = useLocation().pathname
-  const [expanded, setExpanded] = useState(navReset !== 0);
-  useEffect(() => {
-    // Set aria-expanded to true a tick after mount
-    const timeout = setTimeout(() => setExpanded(false), 1);
-    return () => clearTimeout(timeout);
-  }, [navReset]);
 
   return (
-    <header className="border-b px-4 md:px-6 sticky top-0 z-1000 opacity-100 bg-[var(--background)]/90" key={navReset}>
+    <header className="border-b px-4 md:px-6 sticky top-0 z-1000 opacity-100 bg-[var(--background)]/90">
       <div className="flex h-16 items-center justify-between gap-4">
         {/* Left side */}
         <div className="flex flex-1 items-center gap-2">
           {/* Mobile menu trigger */}
-          <Popover>
+          <Popover open={open} onOpenChange={setOpen}>
             <PopoverTrigger asChild>
               <Button
                 className="group size-8 md:hidden"
                 variant="ghost"
                 size="icon"
-                aria-expanded={expanded}
-                onClick={() => setExpanded(!expanded)}
+                aria-expanded={open}
+                onClick={() => setOpen((e) => !e)}
               >
                 <svg
                   className="pointer-events-none"
@@ -88,7 +82,7 @@ export default function Navbar() {
                   {navigationLinks.map((link, index) => {
                     const Icon = link.icon
                     return (
-                      <NavigationMenuItem key={index} className="w-full" onClick={() => { setNavReset((e) => e + 1) }}>
+                      <NavigationMenuItem key={index} className="w-full" onClick={() => { setOpen(false) }}>
                         <NavigationMenuLink
                           href={link.href}
                           className="flex-row items-center gap-2 py-1.5"

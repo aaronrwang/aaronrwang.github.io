@@ -92,19 +92,20 @@ export default function Projects() {
   function incrementTab() {
     setTab((e) => (e + 1) % projects.length)
   }
+
   return (
     <Tabs
       defaultValue={tab + ''}
+      value={tab + ''}
       className="items-center"
-      key={tab}
     >
 
-      <div className="grow text-start flex flex-col items-center justify-center mt-[-64px]">
+      <div className="grow text-start flex flex-col items-center justify-center">
         {Object.entries(projects).map(([key, project]) => {
           return (
 
             <TabsContent key={key} value={key}>
-              <div className="relative w-80 md:w-full md:p-4 rounded-2xl border bg-background shadow-md transition-shadow hover:shadow-xl overflow-hidden flex flex-col md:grid md:grid-cols-2 md:grid-rows-1 items-center justify-center mt-[32px] md:mt-[64px]">
+              <div className="relative w-80 md:w-full md:p-4 rounded-2xl border bg-background shadow-md transition-shadow hover:shadow-xl overflow-hidden flex flex-col md:grid md:grid-cols-2 md:grid-rows-1 items-center justify-center">
 
                 {/* Content Section */}
                 <div className="px-4 py-3 space-y-3 flex-1 flex flex-col justify-between">

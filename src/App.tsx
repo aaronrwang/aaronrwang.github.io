@@ -18,7 +18,7 @@ function App() {
 
       <Router>
         <Navbar />
-        <div className="h-16 w-full" />
+        <div className="h-8 md:h-16 w-full" />
         <div className="px-0 md:px-8 flex flex-col items-center">
           <Routes>
             <Route path="" element={<Home at={at} sat={sat} />} />

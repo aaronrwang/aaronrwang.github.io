@@ -38,13 +38,13 @@ const items = [
     description:
       "\u2022 Taught a class of ~15 kids STEM related activities, including how to solve a Rubik’s cube, animation, and engineering\n\u2022 Created lesson plans for children who could not yet read or write",
   },
-  {
-    id: 5,
-    date: "Aug 2017 - Aug 2024 (Summer)",
-    title: "Senior Leader @ Princeton Christian Church",
-    description:
-      "\u2022 Managed daily schedules of camp groups and coordinated activities for 100+ campers (2023, 2024)\n\u2022 Trained 30+ volunteers on basic child care and camp rules\n\u2022 Educated children aged 3-10 about the Gospel",
-  },
+  // {
+  //   id: 5,
+  //   date: "Aug 2017 - Aug 2024 (Summer)",
+  //   title: "Senior Leader @ Princeton Christian Church",
+  //   description:
+  //     "\u2022 Managed daily schedules of camp groups and coordinated activities for 100+ campers (2023, 2024)\n\u2022 Trained 30+ volunteers on basic child care and camp rules\n\u2022 Educated children aged 3-10 about the Gospel",
+  // },
   {
     id: 6,
     date: "Sep 2021 - May 2023 (School Year)",
