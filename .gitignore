@@ -12,8 +12,7 @@ dist
 dist-ssr
 *.local
 
-# notes
-notes.txt
+.env
 
 # Editor directories and files
 .vscode/*
@@ -25,6 +24,3 @@ notes.txt
 *.njsproj
 *.sln
 *.sw?
-
-#API Keys
-.env

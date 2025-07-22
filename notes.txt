@@ -1,3 +1,7 @@
+popover for contact
+Tabs for project
+swipe left and right for work vs volunteer experience with motion animation.'
+
 git add --all
 git add dist -f
 git commit -m "<message>"
