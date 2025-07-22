@@ -38,7 +38,13 @@ function MyComponent(props: any) {
 </style>
 
 
-${course.link ? `<a href="${course.link}" target="_blank" rel="noopener noreferrer"><button style="padding:6px 12px; font-size:14px; border:none; background:#1e88e5; color:white; border-radius:4px;" class="grow">View Coursework/Projects</button></a>` : ""}
+${course.link ? `<a href="${course.link}" target="_blank" rel="noopener noreferrer" className="w-fit">
+  <button
+    className="inline-flex items-center justify-center rounded-md bg-muted/80 px-4 py-2 text-sm font-medium text-foreground shadow-md transition-all duration-200 hover:scale-[1.02] hover:bg-muted focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+  >
+    View Coursework/Projects
+  </button>
+</a>` : ""}
 
 
 ---

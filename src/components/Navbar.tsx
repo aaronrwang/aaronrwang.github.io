@@ -1,4 +1,5 @@
-import { HouseIcon, InboxIcon, IdCard, SchoolIcon, ContactIcon, FileText, GraduationCap } from "lucide-react"
+import { HouseIcon, InboxIcon, FileText, GraduationCap } from "lucide-react"
+// import { IdCard, SchoolIcon, ContactIcon } from "lucide-react"
 
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -26,7 +27,7 @@ const navigationLinks = [
   { href: "#experience", label: "Experience", icon: FileText },
   { href: "#projects", label: "Projects", icon: InboxIcon },
   { href: "#courses", label: "Courses", icon: GraduationCap },
-  { href: "#contact", label: "Contact", icon: ContactIcon },
+  // { href: "#contact", label: "Contact", icon: ContactIcon },
 ]
 
 export default function Navbar() {
@@ -143,19 +144,21 @@ export default function Navbar() {
         {/* Right side: Actions */}
         <div className="flex flex-1 items-center justify-end gap-4">
           {/* User menu */}
-          <Button size="sm" className="text-sm sm:aspect-square transition-transform duration-200 hover:scale-105">
-            <a target="_blank" href="https://www.linkedin.com/in/aaron-r-wang/">
+          <a target="_blank" href="https://www.linkedin.com/in/aaron-r-wang/">
+            <Button size="sm" variant="outline" className="text-sm sm:aspect-square transition-transform duration-200 hover:scale-105">
+
               <FaLinkedin size={16} />
               <span className="sr-only">Linkedin</span>
-            </a>
-          </Button>
+
+            </Button>
+          </a>
           {/* Upgrade button */}
-          <Button size="sm" className="text-sm sm:aspect-square transition-transform duration-200 hover:scale-105">
-            <a target="_blank" href="https://github.com/aaronrwang" >
+          <a target="_blank" href="https://github.com/aaronrwang">
+            <Button size="sm" variant="outline" className="text-sm sm:aspect-square transition-transform duration-200 hover:scale-105">
               <FaGithub size={16} />
               <span className="sr-only">Github</span>
-            </a>
-          </Button>
+            </Button>
+          </a>
         </div>
       </div>
     </header >

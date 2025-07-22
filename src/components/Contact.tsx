@@ -12,41 +12,36 @@ import { Textarea } from "@/components/ui/textarea"
 
 export default function Contact() {
   const form = useRef<HTMLFormElement | null>(null);
-  const name = useRef<HTMLFormElement | null>(null);
-  const email = useRef<HTMLFormElement | null>(null);
-  const message = useRef<HTMLFormElement | null>(null);
+  const name = useRef<HTMLInputElement | null>(null);
+  const email = useRef<HTMLInputElement | null>(null);
+  const message = useRef<HTMLTextAreaElement | null>(null);
 
   const inView = useInView(form, { once: true, margin: '-100px' });
 
   const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    // emailjs
-    //   .sendForm('service_3m68nvi', 'template_a4qwp58', form.current, {
-    //     publicKey: import.meta.env.VITE_API_KEY,
-    //   })
-    //   .then(
-    //     () => {
-    //       const sentDiv = document.querySelector('.sent');
-    //       sentDiv.style.visibility = 'visible';
-    //       setTimeout(() => {
-    //         sentDiv.style.visibility = 'hidden'; // Hide the div after 5 seconds
-    //       }, 2000);
-    //     },
-    //     (error) => {
-    //       console.log('FAILED...', error);
-    //     },
-    //   );
-    name.current.value = ''
-    email.current.value = ''
-    message.current.value = ''
-  };
-  function reset() {
-    const sentDiv = document.querySelector('.sent');
+    emailjs
+      .sendForm('service_3m68nvi', 'template_a4qwp58', form.current!, {
+        publicKey: import.meta.env.VITE_API_KEY,
+      })
+      .then(
+        () => {
+          // const sentDiv = document.querySelector('.sent');
+          // sentDiv.style.visibility = 'visible';
+          // setTimeout(() => {
+          //   sentDiv.style.visibility = 'hidden'; // Hide the div after 5 seconds
+          // }, 2000);
+          console.log('Success');
+          name.current!.value = ''
+          email.current!.value = ''
+          message.current!.value = ''
+        },
+        (error) => {
+          console.log('FAILED...', error);
+        },
+      );
 
-    if (sentDiv) {
-      sentDiv.style.visibility = 'none';
-    }
-  }
+  };
   return (
     <motion.form
       ref={form}
@@ -70,8 +65,6 @@ export default function Contact() {
       <Input type="text" name="name" placeholder="Name" className="contact-inputs" required ref={name} />
       <Input type="text" name="email" placeholder="Email" className="contact-inputs" required ref={email} />
       <Textarea name="message" placeholder="Type your message here." required ref={message} />
-
-      <div className="sent" onClick={reset} style={{ 'display': 'none' }}>Thank You</div>
     </motion.form>
   );
 }
