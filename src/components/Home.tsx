@@ -17,7 +17,12 @@ export default function Home({
   if (at > 1) {
     return (<>
 
-      <div className="flex flex-col-reverse items-center justify-center lg:flex-row my-[-72px] lg:my-[-128px] h-[100vh]" >
+      <motion.div
+        className="flex flex-col-reverse items-center justify-center lg:flex-row my-[-72px] lg:my-[-128px] h-[100vh]"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         <div className="w-96 lg:w-[32rem]">
           <Lottie animationData={animation} loop={true} />
         </div>
@@ -38,7 +43,7 @@ export default function Home({
             </Button>
           </a>
         </div>
-      </div >
+      </motion.div >
     </>)
   }
   const breakpoint = 768
@@ -52,7 +57,12 @@ export default function Home({
   return (
     <>
 
-      <div className="flex flex-col-reverse items-center justify-center lg:flex-row my-[-72px] lg:my-[-128px] h-[100vh]" >
+      <motion.div
+        className="flex flex-col-reverse items-center justify-center lg:flex-row my-[-72px] lg:my-[-128px] h-[100vh]"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
 
         <motion.div
           initial={isLarge ? { opacity: 1 } : { opacity: 0 }}
@@ -100,6 +110,6 @@ export default function Home({
             </Button>
           </motion.a>
         </div>
-      </div>
+      </motion.div>
     </>)
 }

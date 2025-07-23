@@ -1,5 +1,6 @@
 import FileTree from './course-components/FileTree';
 import ReadmeViewer from './course-components/ReadMeViewer';
+import { motion } from 'framer-motion';
 
 import { useEffect, useState } from "react";
 
@@ -27,8 +28,13 @@ export default function Courses() {
 
   return (
     <>
-      <div className="w-full flex flex-col-reverse overflow-hidden sm:border rounded-lg sm:flex-row"
-        style={isSmUp ? { height: `${height}px` } : {}} >
+      <motion.div
+        className="w-full flex flex-col-reverse overflow-hidden sm:border rounded-lg sm:flex-row"
+        style={isSmUp ? { height: `${height}px` } : {}}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.5 }}
+      >
         {/* Left Pane */}
         <div
           className="w-full sm:w-[260px] h-full overflow-auto sm:border-r border rounded-lg sm:rounded-none"
@@ -41,7 +47,7 @@ export default function Courses() {
         {/* Right Pane */}
         <ReadmeViewer fileName={activeCourse} className="sm:flex-1 overflow-auto sm:w-full rounded-lg border sm:rounded-none" style={isSmUp ? { height: `${height}px` } : {}} />
 
-      </div >
+      </motion.div >
     </>
   );
 }

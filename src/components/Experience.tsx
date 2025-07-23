@@ -9,6 +9,8 @@ import {
   TimelineTitle,
 } from "@/components/ui/timeline"
 
+import { motion } from 'framer-motion';
+
 const items = [
   {
     id: 1,
@@ -56,7 +58,12 @@ const items = [
 
 export default function Experience() {
   return (
-    <div className="w-7/8 md:w-[37.5rem] flex flex-col items-center">
+    <motion.div
+      className="w-7/8 md:w-[37.5rem] flex flex-col items-center"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <h1 className="text-2xl pb-2 border-b w-1/2 mb-4">Experience</h1>
       <Timeline defaultValue={3} className="text-left">
         {items.map((item) => (
@@ -71,6 +78,6 @@ export default function Experience() {
           </TimelineItem>
         ))}
       </Timeline>
-    </div>
+    </motion.div>
   )
 }
