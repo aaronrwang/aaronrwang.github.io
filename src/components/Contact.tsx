@@ -54,7 +54,7 @@ export default function Contact() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="fixed bottom-4 right-4 z-50 border-[var(--teal-accent)]"
+      className="fixed bottom-4 right-4 z-150 border-[var(--teal-accent)]"
     >
       <Popover open={open} onOpenChange={setOpen}>
         <PopoverTrigger asChild>
