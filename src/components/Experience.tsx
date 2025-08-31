@@ -9,15 +9,17 @@ import {
   TimelineTitle,
 } from "@/components/ui/timeline"
 
+import { motion } from 'framer-motion';
+
 const items = [
   {
     id: 1,
-    date: "Jun 2025 - Present",
-    title: "IT Intern @ Bausch + Lomb",
+    date: "Feb 2025 - Present",
+    title: "Research Intern @ University of Notre Dame",
     description:
-      "\u2022 Designed and improved internal chatbots to help employees navigate  policies and access company resources more efficiently\n\u2022 Built Power Automate workflows using prompt engineering to expedite document processing\n\u2022 Automated form submission and tracking processes, significantly reducing manual effort and speeding up internal workflows",
+      "Web3DB Project; Led by Taeho Jung, Showkot Hossain, and Wenyi Tang\n\u2022 Analyzed and researched relational databases, specifically PostgreSQL and MySQL, to design and implement an indexing mechanism within the Web3DB project",
   },
-  {
+    {
     id: 2,
     date: "Aug 2024 - Present",
     title: "Teacher's Assistant @ University of Notre Dame",
@@ -26,10 +28,10 @@ const items = [
   },
   {
     id: 3,
-    date: "Feb 2025 - May 2025",
-    title: "Research Assistant @ University of Notre Dame",
+    date: "Jun 2025 - Aug 2025",
+    title: "IT Intern @ Bausch + Lomb",
     description:
-      "Web3DB Project; Led by Taeho Jung, Showkot Hossain, and Wenyi Tang\n\u2022 Analyzed and researched relational databases, specifically PostgreSQL and MySQL, to design and implement an indexing mechanism within the Web3DB project",
+      "\u2022 Designed and improved internal chatbots to help employees navigate  policies and access company resources more efficiently\n\u2022 Built Power Automate workflows using prompt engineering to expedite document processing\n\u2022 Automated form submission and tracking processes, significantly reducing manual effort and speeding up internal workflows",
   },
   {
     id: 4,
@@ -56,7 +58,12 @@ const items = [
 
 export default function Experience() {
   return (
-    <div className="w-7/8 md:w-[37.5rem] flex flex-col items-center">
+    <motion.div
+      className="w-7/8 md:w-[37.5rem] flex flex-col items-center"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
       <h1 className="text-2xl pb-2 border-b w-1/2 mb-4">Experience</h1>
       <Timeline defaultValue={3} className="text-left">
         {items.map((item) => (
@@ -71,6 +78,6 @@ export default function Experience() {
           </TimelineItem>
         ))}
       </Timeline>
-    </div>
+    </motion.div>
   )
 }

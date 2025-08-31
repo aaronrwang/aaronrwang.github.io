@@ -16,10 +16,10 @@ import memory from '@/assets/projects/Memory.png';
 import tangobot from '@/assets/projects/Tangobot.png';
 
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { Button } from "@/components/ui/button";
-// import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { Github } from "lucide-react"
 
 interface Project {
@@ -84,6 +84,15 @@ const projects: Array<Project> = [
 
 export default function Projects() {
   const [tab, setTab] = useState(0);
+  const [auto, setAuto] = useState(true);
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (auto) {
+        incrementTab();
+      }
+    }, 5000)
+    return () => clearInterval(interval);
+  }, [auto]);
 
   function decrementTab() {
     setTab((e) => (projects.length + e - 1) % projects.length)
@@ -105,7 +114,12 @@ export default function Projects() {
           return (
 
             <TabsContent key={key} value={key}>
-              <div className="relative w-80 md:w-full md:p-4 rounded-2xl border bg-background shadow-md transition-shadow hover:shadow-xl overflow-hidden flex flex-col md:grid md:grid-cols-2 md:grid-rows-1 items-center justify-center">
+              <motion.div className="relative w-80 md:w-full md:p-4 rounded-2xl border bg-background shadow-md transition-shadow hover:shadow-xl overflow-hidden flex flex-col md:grid md:grid-cols-2 md:grid-rows-1 items-center justify-center"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 0.5 }}
+              >
 
                 {/* Content Section */}
                 <div className="px-4 py-3 space-y-3 flex-1 flex flex-col justify-between">
@@ -160,12 +174,12 @@ export default function Projects() {
                     />
                   </div>
                 )}
-              </div>
+              </motion.div>
             </TabsContent>
           )
         })}
       </div>
-      <div className="flex gap-2 items-center fixed bottom-4 border-[var(--teal-accent)]">
+      <div className="flex gap-2 items-center fixed bottom-4 border-[var(--teal-accent)]" onClick={() => setAuto(false)}>
         <Button variant="outline" className="h-8 w-8 p-2 rounded-xl" onClick={() => decrementTab()}>
           <ChevronLeft size={8} />
         </Button>
