@@ -14,24 +14,24 @@ import { motion } from 'framer-motion';
 const items = [
   {
     id: 1,
-    date: "Jun 2025 - Present",
-    title: "IT Intern @ Bausch + Lomb",
-    description:
-      "\u2022 Designed and improved internal chatbots to help employees navigate  policies and access company resources more efficiently\n\u2022 Built Power Automate workflows using prompt engineering to expedite document processing\n\u2022 Automated form submission and tracking processes, significantly reducing manual effort and speeding up internal workflows",
-  },
-  {
-    id: 2,
     date: "Aug 2024 - Present",
     title: "Teacher's Assistant @ University of Notre Dame",
     description:
       "Discrete Math (Fall 2024, 2025) | Data Structures (Spring 2025)\n\u2022 Hosting office hours weekly to further explain concepts and supplement in-class lectures\n\u2022 Creating and grading problem sets for 80+ students every week",
   },
   {
-    id: 3,
-    date: "Feb 2025 - May 2025",
-    title: "Research Assistant @ University of Notre Dame",
+    id: 2,
+    date: "Feb 2025 - Present",
+    title: "Research Intern @ University of Notre Dame",
     description:
       "Web3DB Project; Led by Taeho Jung, Showkot Hossain, and Wenyi Tang\n\u2022 Analyzed and researched relational databases, specifically PostgreSQL and MySQL, to design and implement an indexing mechanism within the Web3DB project",
+  },
+  {
+    id: 3,
+    date: "Jun 2025 - Aug 2025",
+    title: "IT Intern @ Bausch + Lomb",
+    description:
+      "\u2022 Designed and improved internal chatbots to help employees navigate  policies and access company resources more efficiently\n\u2022 Built Power Automate workflows using prompt engineering to expedite document processing\n\u2022 Automated form submission and tracking processes, significantly reducing manual effort and speeding up internal workflows",
   },
   {
     id: 4,
