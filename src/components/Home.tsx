@@ -32,7 +32,7 @@ export default function Home({
             Hi, I'm Aaron Wang!
           </h1>
           <p className="text-muted-foreground text-base leading-relaxed py-2">
-            I'm a rising junior studying Computer Science and Applied Mathematics/Statistics at the University of Notre Dame. Explore my resume, experience, projects, and courses!
+            I'm a junior studying Computer Science and Applied Mathematics/Statistics at the University of Notre Dame. Explore my resume, experience, projects, and courses!
           </p>
           <a
 

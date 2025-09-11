@@ -17,7 +17,7 @@ const items = [
     date: "Feb 2025 - Present",
     title: "Research Intern @ University of Notre Dame",
     description:
-      "Web3DB Project; Led by Taeho Jung, Showkot Hossain, and Wenyi Tang\n\u2022 Analyzed and researched relational databases, specifically PostgreSQL and MySQL, to design and implement an indexing mechanism within the Web3DB project",
+      "Web3DB Project; Led by Taeho Jung, Showkot Hossain, and Wenyi Tang\n\u2022	Writing Python scripts to implement Delta-based indexing while leveraging Pandas for data processing\n\u2022	Researching relational databases, specifically PostgreSQL and MySQL, to design and implement efficient indexing and querying within the Web3DB Project\n\u2022 Utilizing Docker and Apache Spark for scalable testing across multiple worker nodes",
   },
     {
     id: 2,
