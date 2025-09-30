@@ -73,7 +73,7 @@ export const cs = [
   },
 
   {
-    'id': 'CSE-40771',
+    'id': 'CSE-30321',
     'name': 'Computer Architecture',
     'nickname': 'Comp Arch',
     'grade': 'A',

@@ -34,12 +34,14 @@ Thanks for visiting my page! This course explorer lets you browse classes I have
 
 Here are some of my favorite classes or ones that included major coursework, hands-on labs, or personal projects:
 
-- **CSE-30341: Theory of Computing**  
+- **CSE-30151: Theory of Computing**  
   I enjoyed studying the theoretical limits of computation and proving whether questions were (or were not) possible to solve. I also enjoyed creating our own version of grep as a project in this class.
 
-- **CSE-30341: Computer Architecture**  
-  Although I do not plan to go into hardware, I enjoyed learning the fundamentals of how computers and modern electronics work, learning about all the abstraction that goes on to create programs.
+- **CSE-30321: Computer Architecture**  
+  I enjoyed learning the fundamentals of how computers and modern electronics work, learning about all the abstraction that goes on to create programs starting at the hardware level.
 
+- **CSE-30341: Operating Systems**  
+  I enjoyed learning the fundamentals of how computers and modern electronics work, learning about all the abstraction that goes on to create programs starting at the hardware level.
 
 These courses helped shape my academic and personal interests and often include links to detailed project reports or GitHub repos.
 `
