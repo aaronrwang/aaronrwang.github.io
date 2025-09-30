@@ -59,8 +59,8 @@ export default function Contact() {
       <Popover open={open} onOpenChange={setOpen}>
         <PopoverTrigger asChild>
           <Button variant="outline" aria-label="Filters">
-            <p className="hidden sm:block">Contact Me</p>
             <Mail size={16} aria-hidden="true" />
+            <p className="hidden sm:block">Contact Me</p>
           </Button>
         </PopoverTrigger>
         <PopoverContent className="m-4 p-2 w-64 rounded-xl">
