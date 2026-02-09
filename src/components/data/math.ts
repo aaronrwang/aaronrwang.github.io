@@ -48,7 +48,7 @@ export const math = [
   {
     'id': 'ACMS-40390',
     'name': 'Numerical Analysis',
-    'grade': 'N/A',
+    'grade': 'IP',
     'description': 'An introduction to the numerical solution of ordinary and partial differential equations. Topics include the finite difference method, projection methods, cubic splines, interpolation, numerical integration methods, analysis of numerical errors, numerical linear algebra and eigenvalue problems, and continuation methods.'
   },
   {
@@ -62,7 +62,7 @@ export const math = [
     'id': 'ACMS-40842',
     'name': 'Time Series Analysis',
     'nickname': 'Time Series',
-    'grade': 'IP',
+    'grade': 'A',
     'description': 'This is an introductory and applied course in time series analysis. Popular time series models and computational techniques for model estimation, diagnostic and forecasting will be discussed. Although the book focuses on financial data sets, other data sets, such as climate data, earthquake data and biological data, will also be included and discussed within the same theoretical framework.'
   }
 ]

@@ -68,7 +68,7 @@ export const cs = [
   {
     'id': 'CSE-30341',
     'name': 'Operating Systems',
-    'grade': 'IP',
+    'grade': 'A',
     'description': 'Introduction to all aspects of modern operating systems. Topics include process structure and synchronization, interprocess communication, memory management, file systems, security, I/O, and distributed files systems.'
   },
 
@@ -83,7 +83,7 @@ export const cs = [
   {
     'id': 'CSE-40113',
     'name': 'Algorithms',
-    'grade': 'N/A',
+    'grade': 'IP',
     'description': 'Techniques for designing efficient computer algorithms and for analyzing computational costs of algorithms. Common design strategies such as dynamic programming, divide-and-conquer, and Greedy methods. Problem-solving approaches such as sorting, searching, and selection; lower bounds; data structures; algorithms for graph problems; geometric problems; and other selected problems. Computationally intractable problems (NP-completeness).'
   },
   {
@@ -98,33 +98,33 @@ export const cs = [
   {
     'id': 'CSE-40243',
     'name': 'Compilers',
-    'grade': 'IP',
+    'grade': 'A',
     'description': 'Compilers is a challenging and fun course for students who are planning a career in advanced software development. In this class, students will design and implement a complete compiler for a C-like language from top to bottom. The course brings together many different elements of computer science, ranging from the theoretical (formal grammar classes) to the very practical (x86 assembly language) with a pinch of software engineering in the middle. After completing the course, you will be able to write programs that manipulate computer languages in different ways, ranging from simple interactive calculators to programs that translate one language to another. Students completing the course may also experience some side effects: (1) You will learn how to use pointers really well. (2) You will gain experience in engineering a complex piece of software including revision control, testing, and evolution. (3) You will understand the C language inside and out, which will make you a better programmer all around.'
   },
   {
     'id': 'CSE-40432',
     'name': 'Theory of Programming Languages',
     'nickname': 'Theory of PL',
-    'grade': 'IP',
+    'grade': 'A',
     'description': 'Introduction to the theory of programming languages. How to define programming languages using operational semantics and type systems, and how to prove things about them. Starting with the lambda calculus as a core, a simple programming language is built up, with higher-order functions and lexical scope; algebraic data types, polymorphic types, and type inference; state and control. Students will also gain experience with functional programming and writing interpreters.'
   },
   {
     'id': 'CSE-30264',
     'name': 'Computer Networks',
     'nickname': 'Networks',
-    'grade': 'IP',
+    'grade': 'A',
     'description': 'This course introduces students to fundamental topics on the principles, design, implementation, and performance of computer networks. Topics include: Internet architecture, protocols, socket programming, congestion control, switching and routing, local area networks, mobile and ad-hoc networks, network security, the end-to-end arguments and resource allocation.'
   },
 
   {
     'id': 'CSE-4',
-    'name': 'CSE Elective',
+    'name': 'Distributed Systems',
     'grade': 'N/A',
     'description': ''
   },
   {
     'id': 'CSE-5',
-    'name': 'CSE Elective',
+    'name': 'Computer Security',
     'grade': 'N/A',
     'description': ''
   },
