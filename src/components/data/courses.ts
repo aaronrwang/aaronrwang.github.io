@@ -2,7 +2,7 @@ import { eg } from './eg';
 import { cs } from './cs';
 import { math } from './math';
 import { core } from './core';
-import { ecp } from './ecp';
+// import { ecp } from './ecp';
 
 export type Course = {
   name: string;
@@ -14,7 +14,7 @@ export const courses: Record<string, Course[]> = {
   'Computer Science': cs,
   'Mathematics': math,
   'Engineering': eg,
-  'Business': ecp,
+  // 'Business': ecp,
   'Liberal Arts': core,
 
 }

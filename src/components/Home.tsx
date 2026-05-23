@@ -32,7 +32,7 @@ export default function Home({
             Hi, I'm Aaron Wang!
           </h1>
           <p className="text-muted-foreground text-base leading-relaxed py-2">
-            I'm a junior studying Computer Science and Applied Mathematics/Statistics at the University of Notre Dame. Explore my resume, experience, projects, and courses!
+            I'm a senior studying Computer Science and Applied Mathematics/Statistics at the University of Notre Dame. Explore my resume, experience, projects, and courses!
           </p>
           <a
 
@@ -79,7 +79,7 @@ export default function Home({
             ]}
             className="text-3xl font-bold py-2"
             wrapper="h1"
-            speed={50}
+            speed={80}
             style={{ display: 'block' }}
             repeat={0}
             omitDeletionAnimation={true}
@@ -87,12 +87,12 @@ export default function Home({
           />
           <TypeAnimation
             sequence={[
-              2000,
-              "I'm a rising junior studying Computer Science and Applied Mathematics/Statistics at the University of Notre Dame. Explore my resume, experience, projects, and courses!",
+              800,
+              "I'm a senior studying Computer Science and Applied Mathematics/Statistics at the University of Notre Dame. Explore my resume, experience, projects, and courses!",
             ]}
             className="text-muted-foreground text-base leading-relaxed py-2"
             wrapper="p"
-            speed={64}
+            speed={80}
             style={{ display: 'block' }}
             repeat={0}
             omitDeletionAnimation={true}
@@ -102,7 +102,7 @@ export default function Home({
           <motion.a
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 9, duration: 0.8 }}
+            transition={{ delay: 4.5, duration: 0.8 }}
             target="_blank" href="https://drive.google.com/file/d/1hQEJ8JxSfK0S432iqlYz3kVYIHUYVZbA/view?usp=sharing" className="py-2 block">
             <Button size="sm" className="bg-[var(--teal-accent)] hover:bg-[var(--teal-accent)] text-sm sm:aspect-square transition-transform duration-200 hover:scale-105">
               <Download size={16} />

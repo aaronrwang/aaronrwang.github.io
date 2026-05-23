@@ -48,15 +48,15 @@ export const math = [
   {
     'id': 'ACMS-40390',
     'name': 'Numerical Analysis',
-    'grade': 'IP',
+    'grade': 'A',
     'description': 'An introduction to the numerical solution of ordinary and partial differential equations. Topics include the finite difference method, projection methods, cubic splines, interpolation, numerical integration methods, analysis of numerical errors, numerical linear algebra and eigenvalue problems, and continuation methods.'
   },
   {
-    'id': 'ACMS-40730',
-    'name': 'Mathematical/Comp Modeling',
+    'id': 'ACMS-40740',
+    'name': 'Mathematical and Computational Modeling in Neuroscience',
     'nickname': 'Math Modeling',
-    'grade': 'N/A',
-    'description': 'Introductory course on applied mathematics and computational modeling with emphasis on modeling of biological problems in terms of differential equations and stochastic dynamical systems. Students will be working in groups on several projects and will present them in class in the end of the course.'
+    'grade': 'IP',
+    'description': 'This course will introduce students to some of the most common computational and mathematical models used in neuroscience. In addition to developing a deeper understanding of some biological processes in the brain, students will learn mathematical and computational approaches to studying dynamical systems and modeling physical phenomena. The course is appropriate as an elective for Neuroscience or ACMS majors. The course assumes some experience with linear algebra and probability or statistics, but does not assume any background in biology or neuroscience. Some programming experience is helpful, but not necessary. After completing the course, students will be able to create mathematical models of neural systems, simulate these models in Python, and use mathematical techniques to study the models. Students will also obtain some limited experience with analyzing neural data.'
   },
   {
     'id': 'ACMS-40842',

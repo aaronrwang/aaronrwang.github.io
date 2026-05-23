@@ -83,7 +83,7 @@ export const cs = [
   {
     'id': 'CSE-40113',
     'name': 'Algorithms',
-    'grade': 'IP',
+    'grade': 'A',
     'description': 'Techniques for designing efficient computer algorithms and for analyzing computational costs of algorithms. Common design strategies such as dynamic programming, divide-and-conquer, and Greedy methods. Problem-solving approaches such as sorting, searching, and selection; lower bounds; data structures; algorithms for graph problems; geometric problems; and other selected problems. Computationally intractable problems (NP-completeness).'
   },
   {
@@ -117,21 +117,27 @@ export const cs = [
   },
 
   {
-    'id': 'CSE-4',
+    'id': 'CSE-40771',
     'name': 'Distributed Systems',
-    'grade': 'N/A',
-    'description': ''
+    'grade': 'B+',
+    'description': 'A distributed system is any system of independent computers that communicate and cooperate via a newtork. Distributed systems are widely used in many settings spanning cloud services, mobile computers, internet of things, machine learning systems, interplanetary communications, and more. This course will introduce students to the fundamental properties of distributed systems, and develop techniques for building systems that are reliable, consistent, and scalable. Topics will include remote procedure call, logging and checkpointing, replication, consistency, fault tolerance, security and privacy, and more. The course will include a substantial amount of programming to build several working distributed systems that implement scalable data storage, large scale computation, and reliable communication.'
   },
   {
     'id': 'CSE-5',
     'name': 'Computer Security',
-    'grade': 'N/A',
-    'description': ''
+    'grade': 'A',
+    'description': 'This course is a survey of topics in realm of computer security. This course will introduce the students to many contemporary topics in computer security ranging from PKIs (Public Key Infrastructures) to cyber-warfare to security ethics. Students will learn fundamental concepts of security that can be applied to many; traditional aspects of computer programming and computer systems design. The course will culminate in a research project where the student will have an opportunity to more fully investigate a topic related to the course.'
   },
   {
-    'id': 'CSE-6',
-    'name': 'CSE Elective',
-    'grade': 'N/A',
-    'description': ''
+    'id': 'CSE-40702',
+    'name': 'AI Compute Stack',
+    'grade': 'IP',
+    'description': 'This course examines large-scale AI infrastructure through four interlocking lenses: - Programs — How modern AI workloads—especially large language models—actually compute. Through detailed case studies, we will analyze where the real bottlenecks arise: attention\'s memory bandwidth limits, KV cache growth, distributed training communication costs, long-context scaling, and inference-time compute tradeoffs. - Processors — How hardware and physics constrain and enable AI at scale. We will examine GPUs, TPUs, memory hierarchies, interconnects, and emerging accelerator designs, along with the physical realities of power density, rack design, cooling systems, and the limits imposed by thermodynamics and semiconductor fabrication. - Power Grids — The economics of AI infrastructure and the central role of electricity. We will study the cost structure of GPU clusters, cloud pricing models, capital expenditure versus operating expenditure, electricity as the dominant operating input, grid interconnection bottlenecks, and how energy markets shape where and how large-scale compute can be built. - Policy — The geopolitical, environmental, and regulatory forces that shape AI\'s physical footprint. We will analyze semiconductor supply chains, export controls, energy and water constraints, embodied carbon, permitting regimes, and the broader political economy of AI infrastructure. Students finish the course able to reason across all four layers simultaneously—connecting, for example, a transformer\'s KV cache memory bottleneck to HBM supply constraints, to rack-level power density limits, to electricity markets, to export controls and carbon accounting.'
+  },
+    {
+    'id': 'CSE-30246',
+    'name': 'Database Concpets',
+    'grade': 'IP',
+    'description': 'Effective techniques in managing, retrieving and updating information from a database system. Focusing primarily on relational databases, the course presents the entity-relationship model, query processing, and normalization. Topics such as relational calculus and algebra, integrity constraints, distributed databases, and data security will also be discussed. A final project will consist of the design and the implementation of a database system with a Web interface.'
   }
 ]
