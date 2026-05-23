@@ -50,7 +50,7 @@ export const core = [
   },
   {
     'id': 'MUS-20001',
-    'name': 'Theory I',
+    'name': 'Music Theory I',
     'grade': 'IP',
     'description': 'A systematic approach to the understanding and manipulation of the basic materials of music. Required of and intended for music majors and minors, but open to students with sufficient musical background.'
   },

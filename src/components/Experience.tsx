@@ -13,8 +13,8 @@ import { motion } from 'framer-motion';
 
 const items = [
     {
-    id: 2,
-    date: "May 2025 - Aug 2026",
+    id: 1,
+    date: "May 2026 - Aug 2026",
     title: "ASIC Design Intern @ Nvidia",
     description:
       "In progress...",
