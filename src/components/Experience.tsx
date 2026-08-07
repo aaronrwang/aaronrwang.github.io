@@ -17,7 +17,7 @@ const items = [
     date: "May 2026 - Aug 2026",
     title: "ASIC Design Intern @ Nvidia",
     description:
-      "Automation. Python. In progress...",
+      "Python. Automation. In progress...",
   },
   {
     id: 2,
