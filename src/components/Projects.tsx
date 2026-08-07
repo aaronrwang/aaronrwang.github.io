@@ -7,6 +7,7 @@ import {
   TabsTrigger,
 } from "@/components/ui/tabs"
 
+import bankhub from '@/assets/projects/BankHub.png';
 import ndhive from '@/assets/projects/NDHive.png';
 import biblejournal from '@/assets/projects/BibleJournal.png';
 import connectfour from '@/assets/projects/connectfour.png';
@@ -31,6 +32,13 @@ interface Project {
 }
 
 const projects: Array<Project> = [
+  {
+    title: 'BankHub',
+    github: 'https://github.com/aaronrwang/Banking-Dashboard',
+    img: bankhub,
+    description: 'Created a Banking Hub to Consolidate all my banking information in one place: cash, credit, investments, & loands',
+    skills: ['React/Vite', 'Typescript', 'Tailwind(Shadcn)', 'Node/express']
+  },
   {
     title: 'NDHive',
     img: ndhive,
